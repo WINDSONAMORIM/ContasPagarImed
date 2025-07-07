@@ -1,12 +1,14 @@
-import { AccountsPayableDTO } from "../entities/accountsPayable";
+import { AccountsPayableDTO, AccountsPayableResumeDTO } from "../entities/accountsPayable";
+import { ApportionmentDTO } from "../entities/apportionment";
 import { Apportionment } from "./apportionment";
-import { FileTemp } from "./fileTemp";
+import { FilesTemp } from "./fileTemp";
+
 
 export class AccountsPayable {
   private parceriaId: number;
   private prestacaoContaId: number;
   private fornecedorId: number;
-  private cCompetencia: Date;
+  private competencia: Date;
   private dataVencimento: Date;
   private dataEmissao: Date;
   private numFatura: string;
@@ -16,7 +18,7 @@ export class AccountsPayable {
   private valorTotal: number;
   private parcelaPaga: number;
   private totalParcelas: number;
-  private fileTemp: FileTemp;
+  private arquivoTemp: FilesTemp;
   private tributoRetido: boolean;
   private issRetido: number;
   private inssRetido: number;
@@ -33,7 +35,7 @@ export class AccountsPayable {
     this.parceriaId = dto.ParceriaId;
     this.prestacaoContaId = dto.PrestacaoContaId;
     this.fornecedorId = dto.FornecedorId;
-    this.cCompetencia = dto.Competencia;
+    this.competencia = dto.Competencia;
     this.dataVencimento = dto.DataVencimento;
     this.dataEmissao = dto.DataEmissao;
     this.numFatura = dto.NumFatura;
@@ -43,7 +45,7 @@ export class AccountsPayable {
     this.valorTotal = dto.ValorTotal;
     this.parcelaPaga = dto.ParcelaPaga;
     this.totalParcelas = dto.TotalParcelas;
-    this.fileTemp = dto.ArquivoTemp ? new FileTemp(dto.ArquivoTemp) : new FileTemp({} as any);
+    this.arquivoTemp = new FilesTemp(dto.ArquivoTemp);
     this.tributoRetido = dto.TributoRetido;
     this.issRetido = dto.IssRetido;
     this.inssRetido = dto.InssRetido;
@@ -53,9 +55,11 @@ export class AccountsPayable {
     this.csllRetido = dto.CsllRetido;
     this.pccRetido = dto.PccRetido;
     this.numIdentificador = dto.NumIdentificador;
-    this.rateios = dto.Rateios
+    this.rateios = Array.isArray(dto.Rateios)
       ? dto.Rateios.map((rateio) => new Apportionment(rateio))
-      : [];
+      : dto.Rateios
+        ? [new Apportionment(dto.Rateios)]
+        : [];
     this.observacao = dto.Observacao;
   }
 
@@ -63,7 +67,7 @@ export class AccountsPayable {
     return this.toDTO();
   }
 
-  getResumeProps(): Omit<AccountsPayableDTO, "ArquivoTemp" | "Rateios"> {
+  getResumeProps(): Omit<AccountsPayableResumeDTO, "ArquivoTemp" | "Rateios"> {
     const { ArquivoTemp, Rateios, ...resumeProps } = this.toDTO();
     return resumeProps;
   }
@@ -73,7 +77,7 @@ export class AccountsPayable {
       ParceriaId: this.parceriaId,
       PrestacaoContaId: this.prestacaoContaId,
       FornecedorId: this.fornecedorId,
-      Competencia: this.cCompetencia,
+      Competencia: this.competencia,
       DataVencimento: this.dataVencimento,
       DataEmissao: this.dataEmissao,
       NumFatura: this.numFatura,
@@ -83,7 +87,7 @@ export class AccountsPayable {
       ValorTotal: this.valorTotal,
       ParcelaPaga: this.parcelaPaga,
       TotalParcelas: this.totalParcelas,
-      ArquivoTemp: this.fileTemp.getProps(),
+      ArquivoTemp: this.arquivoTemp.getProps(),
       TributoRetido: this.tributoRetido,
       IssRetido: this.issRetido,
       InssRetido: this.inssRetido,
@@ -93,8 +97,10 @@ export class AccountsPayable {
       CsllRetido: this.csllRetido,
       PccRetido: this.pccRetido,
       NumIdentificador: this.numIdentificador,
-      Rateios: this.rateios.map((rateio) => rateio.getProps()),
-      Observacao: this.observacao
+      Rateios: this.rateios.length > 0
+        ? this.rateios.map((rateio) => rateio.toDTO())
+        : [],
+      Observacao: this.observacao,
     };
   }
 }

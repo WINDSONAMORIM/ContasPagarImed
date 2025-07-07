@@ -1,18 +1,20 @@
 import { Request, Response } from "express";
 import axios from "axios";
 import { ResponseAPI } from "../../../types";
-import { AccountsPayableService } from "../services/accountsPayable.serveice";
+import { AccountsPayableService } from "../services/accountsPayable.service";
 
+const baseUrlAPI = process.env.SICAP_API_URL;
 export class AccountsPayableController {
   private accountPayableService: AccountsPayableService;
 
   constructor() {
-    this.accountPayableService = new AccountsPayableService;
+    this.accountPayableService = new AccountsPayableService();
   }
 
   async createAccountPayable(req: Request, res: Response): Promise<void> {
     try {
       const files = req.files as Express.Multer.File[];
+
       if (!files || files.length === 0) {
         res.status(400).json({
           success: false,
@@ -21,22 +23,37 @@ export class AccountsPayableController {
         });
         return;
       }
-      const response = await this.accountPayableService.createAccountsPayable(files);
-      res.status(response.statusCode).json({
-        success: response.success,
-        message: response.message,
-        data: response.data,
+
+      const authHeader = req.headers.authorization ?? "";
+      const contasPagarResponse =
+        await this.accountPayableService.createAccountsPayable(
+          files,
+          authHeader
+        );
+
+      const { data } = await axios.post<ResponseAPI>(
+        `${baseUrlAPI}/ContaAPagar`,
+        contasPagarResponse.data,
+        {
+          headers: {
+            Authorization: authHeader,
+            Accept: "text/plain",
+          },
+        }
+      );
+      res.status(200).json({
+        sucess: true,
+        message: "Contas a Pagar enviada com sucesso",
+        data: data,
       });
-      // const { data } = await axios.post<ResponseAPI>(
-      //   "https://sicap.prefeitura.sp.gov.br/v1/ContaAPagar",
-      //   {
-      //     headers: {
-      //       Authorization: `Bearer ${req.headers.authorization}`,
-      //       Accept: "text/plain",
-      //     },
-      //   }
-      // );
-    } catch (error) {}
+    } catch (error: any) {
+      console.error(error);
+      res.status(500).json({
+        success: false,
+        message: "Erro ao enviar contas a pagar",
+        data: error?.message ?? error,
+      });
+    }
   }
 
   async getAccountsPayable(req: Request, res: Response): Promise<void> {
@@ -56,5 +73,4 @@ export class AccountsPayableController {
       });
     }
   }
-
-}  
+}
