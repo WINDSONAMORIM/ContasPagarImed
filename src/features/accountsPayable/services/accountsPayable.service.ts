@@ -11,97 +11,118 @@ import { ApportionmentDTO } from "../../../entities/apportionment";
 import { prestacao } from "../../../data/prestacaoData";
 import { FilesTempService } from "../../filesTemp/services";
 import { FileTempDTO } from "../../../entities/fileTemp";
+import { SicapClient } from "../../../clients/sicap.client";
 
 const filesTempService = new FilesTempService();
 
 export class AccountsPayableService {
+  private client = new SicapClient();
+
   async createAccountsPayable(
     files: Express.Multer.File[],
     authHeader: string
-  ): Promise<ResponseAPI> {
+  ): Promise<AccountsPayableDTO[]> {
     const filesTempResult = await filesTempService.toLoad(files, authHeader);
 
-    const arquivosTemp = (filesTempResult.data as any[]).map<FileTempDTO>((t) => ({
-      nomeDoArquivo: t.nomeArquivo,
-      hashArquivo: t.hash,
-      extensaoArquivo: t.extensao,
-      cnpjInstituicao: "",
-      parceriaId: 0,
-    }));
-    
-    const resultados: AccountsPayable[] = [];
+    if (!filesTempResult) throw new Error(`Error em FilesTempResult`);
+
+    const arquivosTemp: FileTempDTO = {
+      nomeDoArquivo: filesTempResult.data.NomeDoArquivo,
+      hashArquivo: filesTempResult.data.HashArquivo,
+      extensaoArquivo: filesTempResult.data.ExtensaoArquivo,
+      cnpjInstituicao: filesTempResult.data.CnpjInstituicao,
+      parceriaId: filesTempResult.data.ParceriaId,
+    };
+
+    const listAccountsPayable: AccountsPayableDTO[] = [];
 
     for (const file of files) {
-      try {
-        const parsedData = await xmlParseJson(file.path);
-        const nfe = mappersXml(parsedData);
-        console.log("nota:",nfe)
-        const rateio = Apportionment.maxTypeByValor(
-          nfe.Det,
-          nfe.Cnpj,
-          nfe.ValorTotal
-        );
+      const parsedData = await xmlParseJson(file.path);
+      const nfe = mappersXml(parsedData);
 
-        const newAccountPayable: AccountsPayableDTO = {
-          ParceriaId: 0,
-          PrestacaoContaId: prestacao.find(prestacao => prestacao.ano === nfe.Ano && prestacao.mes === nfe.Mes)?.id ?? 0,
-          FornecedorId:
-            fornecedores.find(
-              (fornecedor) => fornecedor.CnpjCpf === nfe.Cnpj
-            )?.Id ?? 0,
-          Competencia: nfe.DataEmissao,
-          DataVencimento: nfe.DataVencimento,
-          DataEmissao: nfe.DataEmissao,
-          NumFatura: "",
-          NFDoc: nfe.NFDoc,
-          NFDocSerie: nfe.NFDocSerie,
-          ValorParcela: nfe.ValorParcela,
-          ValorTotal: nfe.ValorTotal,
-          ParcelaPaga: 0,
-          TotalParcelas: 1,
-          TributoRetido: false,
-          IssRetido: 0,
-          InssRetido: 0,
-          IrrfRetido: 0,
-          PisPasepRetido: 0,
-          CofinsRetido: 0,
-          CsllRetido: 0,
-          PccRetido: 0,
-          NumIdentificador: "",
-          Observacao: "",
-          ArquivoTemp: arquivosTemp[0],
-          Rateios: (rateio ?? []).map((r: any): ApportionmentDTO => ({
+      const rateio = Apportionment.maxTypeByValor(
+        nfe.Det,
+        nfe.Cnpj,
+        nfe.ValorTotal
+      );
+
+      const newAccountPayable: AccountsPayableDTO = {
+        ParceriaId: 0,
+        PrestacaoContaId:
+          prestacao.find(
+            (prestacao) =>
+              prestacao.ano === nfe.Ano && prestacao.mes === nfe.Mes
+          )?.id ?? 0,
+        FornecedorId:
+          fornecedores.find((fornecedor) => fornecedor.CnpjCpf === nfe.Cnpj)
+            ?.Id ?? 0,
+        Competencia: nfe.DataEmissao,
+        DataVencimento: nfe.DataVencimento,
+        DataEmissao: nfe.DataEmissao,
+        NumFatura: "",
+        NFDoc: nfe.NFDoc,
+        NFDocSerie: nfe.NFDocSerie,
+        ValorParcela: nfe.ValorParcela,
+        ValorTotal: nfe.ValorTotal,
+        ParcelaPaga: 0,
+        TotalParcelas: 1,
+        TributoRetido: false,
+        IssRetido: 0,
+        InssRetido: 0,
+        IrrfRetido: 0,
+        PisPasepRetido: 0,
+        CofinsRetido: 0,
+        CsllRetido: 0,
+        PccRetido: 0,
+        NumIdentificador: "",
+        Observacao: "",
+        ArquivoTemp: arquivosTemp,
+        Rateios: (rateio ?? []).map(
+          (r: any): ApportionmentDTO => ({
             Id: r.Id ?? 0,
             UnidadeId: r.UnidadeId ?? 0,
             LinhaServicoId: r.LinhaServicoId ?? 0,
-            TipoDespesaId: r.TipoDespesaId === null || r.TipoDespesaId === undefined ? 0 : r.TipoDespesaId,
+            TipoDespesaId:
+              r.TipoDespesaId === null || r.TipoDespesaId === undefined
+                ? 0
+                : r.TipoDespesaId,
             Valor: r.Valor ?? 0,
-          })),
-        };
+          })
+        ),
+      };
 
-        resultados.push(new AccountsPayable(newAccountPayable));
-        console.log("Resultados:",resultados)
-        
-      } catch (error) {
-        console.error("Error parsing XML file:", error);
+      listAccountsPayable.push(newAccountPayable);
+    }
+    return listAccountsPayable;
+  }
+
+  async sendAccountsPayable(files: Express.Multer.File[], auth: string) {
+    const contas = await this.createAccountsPayable(files, auth);
+    const results: ResponseAPI[] = [];
+
+    for (const conta of contas) {
+      try {
+        const { data } = await this.client.createAccount(conta, auth);
+        results.push({
+          statusCode: 200,
+          success: true,
+          message: "Create Account Sucess",
+          data: data,
+        });
+      } catch (error: any) {
+        const status = error?.response?.status ?? 500;
+        const mensage = error?.message;
+        const data = error?.response?.data;
+
+        results.push({
+          statusCode: status,
+          success: false,
+          message: mensage,
+          data: data,
+        });
       }
     }
-
-    try {
-      return {
-        statusCode: 200,
-        success: true,
-        message: "Upload files is successfully",
-        data: resultados,
-      };
-    } catch (error: Error | any) {
-      return {
-        statusCode: 501,
-        success: false,
-        message: "Method not implemented",
-        data: null,
-      };
-    }
+    return results;
   }
 
   async createPreviewAccountsPayable(

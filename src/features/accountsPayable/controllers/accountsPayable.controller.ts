@@ -26,28 +26,14 @@ export class AccountsPayableController {
 
       const authHeader = req.headers.authorization ?? "";
       const contasPagarResponse =
-        await this.accountPayableService.createAccountsPayable(
-          files,
-          authHeader
-        );
+        await this.accountPayableService.sendAccountsPayable(files, authHeader);
 
-      const { data } = await axios.post<ResponseAPI>(
-        `${baseUrlAPI}/ContaAPagar`,
-        contasPagarResponse.data,
-        {
-          headers: {
-            Authorization: authHeader,
-            Accept: "text/plain",
-          },
-        }
-      );
       res.status(200).json({
-        sucess: true,
+        success: true,
         message: "Contas a Pagar enviada com sucesso",
-        data: data,
+        data: contasPagarResponse,
       });
     } catch (error: any) {
-      console.error(error);
       res.status(500).json({
         success: false,
         message: "Erro ao enviar contas a pagar",

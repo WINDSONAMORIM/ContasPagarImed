@@ -1,3 +1,4 @@
+import { fornecedores } from "../data/fornecedoresData";
 import { itensNota } from "../data/produtosData";
 import { ApportionmentDTO } from "../entities/apportionment";
 interface Itens{
@@ -7,7 +8,7 @@ interface Itens{
 }
 
 export class Apportionment {
-  private id: string;
+  private id: number;
   private unidadeId: number;
   private linhaServicoId: number;
   private tipoDespesaId: number;
@@ -38,19 +39,27 @@ export class Apportionment {
 
     const sumType: Record<number, number> = {};
 
+    const fornecedor = itensNota.find((f) => f.cnpj === cnpj);
+
+    if(!fornecedor){
+      throw new Error(
+        `Fornecedor ${cnpj} não cadasatrado`
+      )
+    }
+
     for (const det of lista) {
       const codigo = det?.prod?.cProd;
       const valor = Number(det?.prod?.vProd);
 
-      const despesa =
-        itensNota
-          .find((fornecedor) => fornecedor.cnpj === cnpj)
-          ?.itens.find((item) => item.codigo === codigo)?.tipoDespesaId ??
-        undefined;
-
-      if (despesa !== undefined) {
-        sumType[despesa] = (sumType[despesa] ?? 0) + valor;
+      const itemNota = fornecedor.itens.find((i)=>i.codigo === codigo)?.tipoDespesaId;
+          
+      if(!itemNota){
+        throw new Error(
+          `Item da nota ${codigo} não cadastrado.`
+        )
       }
+
+      sumType[itemNota] = (sumType[itemNota] ?? 0) + valor;      
 
       let maxTipo: number | null = null;
       let maxValor = 0;
@@ -63,7 +72,7 @@ export class Apportionment {
       }
 
       return [{ 
-        Id: "",
+        Id: 0,
         UnidadeId: 43,
         LinhaServicoId: 1,
         TipoDespesaId: maxTipo,

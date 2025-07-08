@@ -1,6 +1,6 @@
 //Rateios de despesas para contas a pagar
 export interface ApportionmentDTO {
-  Id: string;
+  Id: number;
   UnidadeId: number;
   LinhaServicoId: number;
   TipoDespesaId: number;
