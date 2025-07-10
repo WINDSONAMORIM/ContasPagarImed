@@ -2,9 +2,11 @@ import { baseUrlAPI } from "../../../config/api";
 import { getBearerToken } from "../../../config/auth";
 import { ResponseAPI } from "../../../types";
 import { xmlParseJson } from "../../../utils/xmlParseJson";
-import { AccountsPayable } from "../../../models/accountsPayable";
 import { mappersXml } from "../../../utils/mappersXml";
-import { AccountsPayableDTO } from "../../../entities/accountsPayable";
+import {
+  AccountsPayableDTO,
+  AccountsPayableResumeDTO,
+} from "../../../entities/accountsPayable";
 import { fornecedores } from "../../../data/fornecedoresData";
 import { Apportionment } from "../../../models/apportionment";
 import { ApportionmentDTO } from "../../../entities/apportionment";
@@ -47,7 +49,7 @@ export class AccountsPayableService {
       );
 
       const newAccountPayable: AccountsPayableDTO = {
-        ParceriaId: 0,
+        ParceriaId: 43,
         PrestacaoContaId:
           prestacao.find(
             (prestacao) =>
@@ -127,36 +129,23 @@ export class AccountsPayableService {
 
   async createPreviewAccountsPayable(
     files: Express.Multer.File[]
-  ): Promise<ResponseAPI> {
-    const previewTable = await Promise.all(
-      files.map(async (file) => {
-        try {
-          const parseData = await xmlParseJson(file.path);
-          const newAccountResumePayable = new AccountsPayable(
-            parseData
-          ).getResumeProps();
-          return { ...newAccountResumePayable, file: file.path };
-        } catch (error) {
-          console.error("Error Preview Table: ", error);
-          return null;
-        }
-      })
-    );
-    try {
-      return {
-        statusCode: 200,
-        success: true,
-        message: "Upload files is successfully",
-        data: previewTable,
+  ): Promise<AccountsPayableResumeDTO[]> {
+    const previewTable: AccountsPayableResumeDTO[] = [];
+
+    for (const file of files) {
+      const parseData = await xmlParseJson(file.path);
+      const nfe = mappersXml(parseData);
+
+      const newAccountResumePayable: AccountsPayableResumeDTO = {
+        Fornecedor: nfe.Cnpj,
+        NFDoc: nfe.NFDoc,
+        NFDocSerie: nfe.NFDocSerie,
+        DataEmissao: nfe.DataEmissao,
+        ValorTotal: nfe.ValorTotal,
       };
-    } catch (error: Error | any) {
-      return {
-        statusCode: 501,
-        success: false,
-        message: "Method not implemented",
-        data: null,
-      };
+      previewTable.push(newAccountResumePayable);
     }
+    return previewTable;
   }
 
   async getAccountsPayable(): Promise<ResponseAPI> {

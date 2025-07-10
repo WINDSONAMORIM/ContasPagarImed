@@ -1,9 +1,5 @@
 import { Request, Response } from "express";
-import axios from "axios";
-import { ResponseAPI } from "../../../types";
 import { AccountsPayableService } from "../services/accountsPayable.service";
-
-const baseUrlAPI = process.env.SICAP_API_URL;
 export class AccountsPayableController {
   private accountPayableService: AccountsPayableService;
 
@@ -28,6 +24,37 @@ export class AccountsPayableController {
       const contasPagarResponse =
         await this.accountPayableService.sendAccountsPayable(files, authHeader);
 
+      res.status(200).json({
+        success: true,
+        message: "Contas a Pagar enviada com sucesso",
+        data: contasPagarResponse,
+      });
+    } catch (error: any) {
+      res.status(500).json({
+        success: false,
+        message: "Erro ao enviar contas a pagar",
+        data: error?.message ?? error,
+      });
+    }
+  }
+
+  async createPreviewAccountPayable(
+    req: Request,
+    res: Response
+  ): Promise<void> {
+    try {
+      const files = req.files as Express.Multer.File[];
+
+      if (!files || files.length === 0) {
+        res.status(400).json({
+          success: false,
+          message: "No files uploaded",
+          data: null,
+        });
+        return;
+      }
+      const contasPagarResponse =
+        await this.accountPayableService.createPreviewAccountsPayable(files);
       res.status(200).json({
         success: true,
         message: "Contas a Pagar enviada com sucesso",

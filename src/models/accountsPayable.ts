@@ -67,10 +67,10 @@ export class AccountsPayable {
     return this.toDTO();
   }
 
-  getResumeProps(): Omit<AccountsPayableResumeDTO, "ArquivoTemp" | "Rateios"> {
-    const { ArquivoTemp, Rateios, ...resumeProps } = this.toDTO();
-    return resumeProps;
-  }
+  // getResumeProps(): Omit<AccountsPayableResumeDTO, "ArquivoTemp" | "Rateios"> {
+  //   const { ArquivoTemp, Rateios, ...resumeProps } = this.toDTO();
+  //   return resumeProps;
+  // }
 
   toDTO(): AccountsPayableDTO {
     return {

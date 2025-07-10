@@ -15,7 +15,7 @@ export interface AccountsPayableDTO {
   ValorTotal: number;
   ParcelaPaga: number;
   TotalParcelas: number;
-  ArquivoTemp: FileTempDTO
+  ArquivoTemp: FileTempDTO;
   TributoRetido: boolean;
   IssRetido: number;
   InssRetido: number;
@@ -30,27 +30,9 @@ export interface AccountsPayableDTO {
 }
 
 export interface AccountsPayableResumeDTO {
-  ParceriaId: number;
-  PrestacaoContaId: number;
-  FornecedorId: number;
-  Competencia: Date;
-  DataVencimento: Date;
+  Fornecedor: string;
   DataEmissao: Date;
-  NumFatura: string;
   NFDoc: string;
   NFDocSerie: string;
-  ValorParcela: number;
   ValorTotal: number;
-  ParcelaPaga: number;
-  TotalParcelas: number;
-  TributoRetido: boolean;
-  IssRetido: number;
-  InssRetido: number;
-  IrrfRetido: number;
-  PisPasepRetido: number;
-  CofinsRetido: number;
-  CsllRetido: number;
-  PccRetido: number;
-  NumIdentificador: string;
-  Observacao: string;
 }
