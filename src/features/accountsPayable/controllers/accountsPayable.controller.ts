@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
 import { AccountsPayableService } from "../services/accountsPayable.service";
+import { AppError } from "../../../utils/appError";
 export class AccountsPayableController {
   private accountPayableService: AccountsPayableService;
 
@@ -30,11 +31,19 @@ export class AccountsPayableController {
         data: contasPagarResponse,
       });
     } catch (error: any) {
-      res.status(500).json({
-        success: false,
-        message: "Erro ao enviar contas a pagar",
-        data: error?.message ?? error,
-      });
+      if (error instanceof AppError) {
+        console.log(`if (error instanceof AppError) ${error}`);
+        res.status(error.statusCode).json({
+          statusCode: error.statusCode,
+          name: error.name,
+          message: error.message,
+        });
+      }
+      // res.status(500).json({
+      //   success: false,
+      //   message: "Erro ao enviar contas a pagar",
+      //   data: error?.message ?? error,
+      // });
     }
   }
 
@@ -60,12 +69,19 @@ export class AccountsPayableController {
         message: "Contas a Pagar enviada com sucesso",
         data: contasPagarResponse,
       });
-    } catch (error: any) {
-      res.status(500).json({
-        success: false,
-        message: "Erro ao enviar contas a pagar",
-        data: error?.message ?? error,
-      });
+    } catch (error) {
+      if (error instanceof AppError) {
+        console.log(`if (error instanceof AppError) ${error}`);
+        res.status(error.statusCode).json({
+          name: error.name,
+          message: error.message,
+        });
+      }
+      // res.status(500).json({
+      //   success: false,
+      //   message: "Erro ao enviar contas a pagar",
+      //   data: error?.message ?? error,
+      // });
     }
   }
 

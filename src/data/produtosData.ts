@@ -3,7 +3,7 @@ interface Itens {
   tipoDespesaId: number;
 }
 
-interface Produtos {
+export interface Produtos {
   cnpj: string;
   itens: Itens[];
 }

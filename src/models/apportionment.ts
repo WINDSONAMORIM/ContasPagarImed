@@ -1,4 +1,3 @@
-import { fornecedores } from "../data/fornecedoresData";
 import { itensNota } from "../data/produtosData";
 import { ApportionmentDTO } from "../entities/apportionment";
 interface Itens{
@@ -32,52 +31,52 @@ export class Apportionment {
     };
   }
 
-  static maxTypeByValor(produtos: Itens, cnpj: string, valor: number) {
-    if (!produtos) return null;
+  // static maxTypeByValor(produtos: Itens, cnpj: string, valor: number) {
+  //   if (!produtos) return null;
 
-    const lista = Array.isArray(produtos) ? produtos : [produtos];
+  //   const lista = Array.isArray(produtos) ? produtos : [produtos];
 
-    const sumType: Record<number, number> = {};
+  //   const sumType: Record<number, number> = {};
 
-    const fornecedor = itensNota.find((f) => f.cnpj === cnpj);
+  //   const fornecedor = itensNota.find((f) => f.cnpj === cnpj);
 
-    if(!fornecedor){
-      throw new Error(
-        `Fornecedor ${cnpj} não cadasatrado`
-      )
-    }
+  //   if(!fornecedor){
+  //     throw new Error(
+  //       `Fornecedor ${cnpj} não cadasatrado`
+  //     )
+  //   }
 
-    for (const det of lista) {
-      const codigo = det?.prod?.cProd;
-      const valor = Number(det?.prod?.vProd);
+  //   for (const det of lista) {
+  //     const codigo = det?.prod?.cProd;
+  //     const valor = Number(det?.prod?.vProd);
 
-      const itemNota = fornecedor.itens.find((i)=>i.codigo === codigo)?.tipoDespesaId;
+  //     const itemNota = fornecedor.itens.find((i)=>i.codigo === codigo)?.tipoDespesaId;
           
-      if(!itemNota){
-        throw new Error(
-          `Item da nota ${codigo} não cadastrado.`
-        )
-      }
+  //     if(!itemNota){
+  //       throw new Error(
+  //         `Item da nota ${codigo} não cadastrado.`
+  //       )
+  //     }
 
-      sumType[itemNota] = (sumType[itemNota] ?? 0) + valor;      
+  //     sumType[itemNota] = (sumType[itemNota] ?? 0) + valor;      
 
-      let maxTipo: number | null = null;
-      let maxValor = 0;
+  //     let maxTipo: number | null = null;
+  //     let maxValor = 0;
 
-      for (const [tipoStr, total] of Object.entries(sumType)) {
-        if (total > maxValor) {
-          maxValor = total;
-          maxTipo = Number(tipoStr);
-        }
-      }
+  //     for (const [tipoStr, total] of Object.entries(sumType)) {
+  //       if (total > maxValor) {
+  //         maxValor = total;
+  //         maxTipo = Number(tipoStr);
+  //       }
+  //     }
 
-      return [{ 
-        Id: 0,
-        UnidadeId: 43,
-        LinhaServicoId: 1,
-        TipoDespesaId: maxTipo,
-        Valor: valor,
-      }];
-    }
-  }
+  //     return [{ 
+  //       Id: 0,
+  //       UnidadeId: 43,
+  //       LinhaServicoId: 1,
+  //       TipoDespesaId: maxTipo,
+  //       Valor: valor,
+  //     }];
+  //   }
+  // }
 }

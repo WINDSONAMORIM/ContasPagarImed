@@ -14,6 +14,9 @@ import { prestacao } from "../../../data/prestacaoData";
 import { FilesTempService } from "../../filesTemp/services";
 import { FileTempDTO } from "../../../entities/fileTemp";
 import { SicapClient } from "../../../clients/sicap.client";
+import { MaxTypeByValor } from "../../../utils/maxTypeByValor";
+import { itensNota } from "../../../data/produtosData";
+import { AppError } from "../../../utils/appError";
 
 const filesTempService = new FilesTempService();
 
@@ -24,78 +27,87 @@ export class AccountsPayableService {
     files: Express.Multer.File[],
     authHeader: string
   ): Promise<AccountsPayableDTO[]> {
-    const filesTempResult = await filesTempService.toLoad(files, authHeader);
+    try {
+      const filesTempResult = await filesTempService.toLoad(files, authHeader);
 
-    if (!filesTempResult) throw new Error(`Error em FilesTempResult`);
+      if (!filesTempResult) throw new Error(`Error em FilesTempResult`);
 
-    const arquivosTemp: FileTempDTO = {
-      nomeDoArquivo: filesTempResult.data.NomeDoArquivo,
-      hashArquivo: filesTempResult.data.HashArquivo,
-      extensaoArquivo: filesTempResult.data.ExtensaoArquivo,
-      cnpjInstituicao: filesTempResult.data.CnpjInstituicao,
-      parceriaId: filesTempResult.data.ParceriaId,
-    };
-
-    const listAccountsPayable: AccountsPayableDTO[] = [];
-
-    for (const file of files) {
-      const parsedData = await xmlParseJson(file.path);
-      const nfe = mappersXml(parsedData);
-
-      const rateio = Apportionment.maxTypeByValor(
-        nfe.Det,
-        nfe.Cnpj,
-        nfe.ValorTotal
-      );
-
-      const newAccountPayable: AccountsPayableDTO = {
-        ParceriaId: 43,
-        PrestacaoContaId:
-          prestacao.find(
-            (prestacao) =>
-              prestacao.ano === nfe.Ano && prestacao.mes === nfe.Mes
-          )?.id ?? 0,
-        FornecedorId:
-          fornecedores.find((fornecedor) => fornecedor.CnpjCpf === nfe.Cnpj)
-            ?.Id ?? 0,
-        Competencia: nfe.DataEmissao,
-        DataVencimento: nfe.DataVencimento,
-        DataEmissao: nfe.DataEmissao,
-        NumFatura: "",
-        NFDoc: nfe.NFDoc,
-        NFDocSerie: nfe.NFDocSerie,
-        ValorParcela: nfe.ValorParcela,
-        ValorTotal: nfe.ValorTotal,
-        ParcelaPaga: 0,
-        TotalParcelas: 1,
-        TributoRetido: false,
-        IssRetido: 0,
-        InssRetido: 0,
-        IrrfRetido: 0,
-        PisPasepRetido: 0,
-        CofinsRetido: 0,
-        CsllRetido: 0,
-        PccRetido: 0,
-        NumIdentificador: "",
-        Observacao: "",
-        ArquivoTemp: arquivosTemp,
-        Rateios: (rateio ?? []).map(
-          (r: any): ApportionmentDTO => ({
-            Id: r.Id ?? 0,
-            UnidadeId: r.UnidadeId ?? 0,
-            LinhaServicoId: r.LinhaServicoId ?? 0,
-            TipoDespesaId:
-              r.TipoDespesaId === null || r.TipoDespesaId === undefined
-                ? 0
-                : r.TipoDespesaId,
-            Valor: r.Valor ?? 0,
-          })
-        ),
+      const arquivosTemp: FileTempDTO = {
+        nomeDoArquivo: filesTempResult.data.NomeDoArquivo,
+        hashArquivo: filesTempResult.data.HashArquivo,
+        extensaoArquivo: filesTempResult.data.ExtensaoArquivo,
+        cnpjInstituicao: filesTempResult.data.CnpjInstituicao,
+        parceriaId: filesTempResult.data.ParceriaId,
       };
 
-      listAccountsPayable.push(newAccountPayable);
+      const listAccountsPayable: AccountsPayableDTO[] = [];
+
+      for (const file of files) {
+        const parsedData = await xmlParseJson(file.path);
+        const nfe = mappersXml(parsedData);
+
+        // const rateio = Apportionment.maxTypeByValor(
+        const rateio = new MaxTypeByValor(itensNota).calculate({
+          produtos: nfe.Det,
+          cnpj: nfe.Cnpj,
+          valor: nfe.ValorTotal,
+        });
+
+        const newAccountPayable: AccountsPayableDTO = {
+          ParceriaId: 43,
+          PrestacaoContaId:
+            prestacao.find(
+              (prestacao) =>
+                prestacao.ano === nfe.Ano && prestacao.mes === nfe.Mes
+            )?.id ?? 0,
+          FornecedorId:
+            fornecedores.find((fornecedor) => fornecedor.CnpjCpf === nfe.Cnpj)
+              ?.Id ?? 0,
+          Competencia: nfe.DataEmissao,
+          DataVencimento: nfe.DataVencimento,
+          DataEmissao: nfe.DataEmissao,
+          NumFatura: "",
+          NFDoc: nfe.NFDoc,
+          NFDocSerie: nfe.NFDocSerie,
+          ValorParcela: nfe.ValorParcela,
+          ValorTotal: nfe.ValorTotal,
+          ParcelaPaga: 0,
+          TotalParcelas: 1,
+          TributoRetido: false,
+          IssRetido: 0,
+          InssRetido: 0,
+          IrrfRetido: 0,
+          PisPasepRetido: 0,
+          CofinsRetido: 0,
+          CsllRetido: 0,
+          PccRetido: 0,
+          NumIdentificador: "",
+          Observacao: "",
+          ArquivoTemp: arquivosTemp,
+          Rateios: (rateio ?? []).map(
+            (r: any): ApportionmentDTO => ({
+              Id: r.Id ?? 0,
+              UnidadeId: r.UnidadeId ?? 0,
+              LinhaServicoId: r.LinhaServicoId ?? 0,
+              TipoDespesaId:
+                r.TipoDespesaId === null || r.TipoDespesaId === undefined
+                  ? 0
+                  : r.TipoDespesaId,
+              Valor: r.Valor ?? 0,
+            })
+          ),
+        };
+
+        listAccountsPayable.push(newAccountPayable);
+      }
+      return listAccountsPayable;
+    } catch (error: any) {
+      if (error instanceof AppError) {
+        console.log(`throw error;${error}`);
+        throw error;
+      }
+      return []
     }
-    return listAccountsPayable;
   }
 
   async sendAccountsPayable(files: Express.Multer.File[], auth: string) {
