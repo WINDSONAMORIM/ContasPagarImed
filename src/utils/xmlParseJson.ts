@@ -10,3 +10,13 @@ export const xmlParseJson = async (
   });
   return parsed;
 }
+
+export const xmlParseJsonFromBuffer = async (
+  buffer: Buffer
+): Promise<any> => {
+  const xmlContent = buffer.toString("utf8");
+  const parsed = await parseStringPromise(xmlContent, {
+    explicitArray: false,
+  });
+  return parsed;
+};

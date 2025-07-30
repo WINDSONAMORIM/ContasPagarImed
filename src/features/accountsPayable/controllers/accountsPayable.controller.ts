@@ -1,6 +1,8 @@
 import { Request, Response } from "express";
 import { AccountsPayableService } from "../services/accountsPayable.service";
 import { AppError } from "../../../utils/appError";
+import path from "path";
+import fs from "fs";
 export class AccountsPayableController {
   private accountPayableService: AccountsPayableService;
 
@@ -10,7 +12,23 @@ export class AccountsPayableController {
 
   async createAccountPayable(req: Request, res: Response): Promise<void> {
     try {
-      const files = req.files as Express.Multer.File[];
+      // const files = req.files as Express.Multer.File[];
+      const filter = path.resolve("filtered");
+      const filesArray = fs.readdirSync(filter);
+
+      const files: Express.Multer.File[] = filesArray.map((fileName) => ({
+          originalname: fileName,
+          buffer: fs.readFileSync(path.join(filter, fileName)),
+          fieldname: "files",
+          encoding: "7bit",
+          mimetype: "application/xml",
+          size: fs.statSync(path.join(filter, fileName)).size,
+          destination: "",
+          filename: fileName,
+          path: "",
+          stream: fs.createReadStream(path.join(filter, fileName)),
+        }
+      ));
 
       if (!files || files.length === 0) {
         res.status(400).json({
@@ -24,6 +42,8 @@ export class AccountsPayableController {
       const authHeader = req.headers.authorization ?? "";
       const contasPagarResponse =
         await this.accountPayableService.sendAccountsPayable(files, authHeader);
+
+      console.log(`contasPagarResponse: ${contasPagarResponse}`);
 
       res.status(200).json({
         success: true,
@@ -39,11 +59,6 @@ export class AccountsPayableController {
           message: error.message,
         });
       }
-      // res.status(500).json({
-      //   success: false,
-      //   message: "Erro ao enviar contas a pagar",
-      //   data: error?.message ?? error,
-      // });
     }
   }
 
@@ -62,6 +77,7 @@ export class AccountsPayableController {
         });
         return;
       }
+
       const contasPagarResponse =
         await this.accountPayableService.createPreviewAccountsPayable(files);
       res.status(200).json({
@@ -77,17 +93,13 @@ export class AccountsPayableController {
           message: error.message,
         });
       }
-      // res.status(500).json({
-      //   success: false,
-      //   message: "Erro ao enviar contas a pagar",
-      //   data: error?.message ?? error,
-      // });
     }
   }
 
   async getAccountsPayable(req: Request, res: Response): Promise<void> {
     try {
-      const response = await this.accountPayableService.getAccountsPayable();
+      const authHeader = req.headers.authorization ?? "";
+      const response = await this.accountPayableService.getAccountsPayable(authHeader);
       res.status(response.statusCode).json({
         success: response.success,
         message: response.message,

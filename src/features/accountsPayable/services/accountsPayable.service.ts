@@ -1,15 +1,13 @@
 import { baseUrlAPI } from "../../../config/api";
 import { getBearerToken } from "../../../config/auth";
 import { ResponseAPI } from "../../../types";
-import { xmlParseJson } from "../../../utils/xmlParseJson";
-import { mappersXml } from "../../../utils/mappersXml";
 import {
-  AccountsPayableDTO,
-  AccountsPayableResumeDTO,
-} from "../../../entities/accountsPayable";
+  xmlParseJson,
+  xmlParseJsonFromBuffer,
+} from "../../../utils/xmlParseJson";
+import { mappersXml } from "../../../utils/mappersXml";
+import { AccountsPayableDTO } from "../../../entities/accountsPayable";
 import { fornecedores } from "../../../data/fornecedoresData";
-import { Apportionment } from "../../../models/apportionment";
-import { ApportionmentDTO } from "../../../entities/apportionment";
 import { prestacao } from "../../../data/prestacaoData";
 import { FilesTempService } from "../../filesTemp/services";
 import { FileTempDTO } from "../../../entities/fileTemp";
@@ -17,6 +15,11 @@ import { SicapClient } from "../../../clients/sicap.client";
 import { MaxTypeByValor } from "../../../utils/maxTypeByValor";
 import { itensNota } from "../../../data/produtosData";
 import { AppError } from "../../../utils/appError";
+import { checkCFOP } from "../../../middlewares/checkCFOP.middleware";
+import path from "path";
+import fs from "fs";
+import { randomUUID } from "crypto";
+import axios from "axios";
 
 const filesTempService = new FilesTempService();
 
@@ -24,11 +27,11 @@ export class AccountsPayableService {
   private client = new SicapClient();
 
   async createAccountsPayable(
-    files: Express.Multer.File[],
+    file: Express.Multer.File,
     authHeader: string
-  ): Promise<AccountsPayableDTO[]> {
+  ): Promise<AccountsPayableDTO> {
     try {
-      const filesTempResult = await filesTempService.toLoad(files, authHeader);
+      const filesTempResult = await filesTempService.toLoad(file, authHeader);
 
       if (!filesTempResult) throw new Error(`Error em FilesTempResult`);
 
@@ -40,78 +43,76 @@ export class AccountsPayableService {
         parceriaId: filesTempResult.data.ParceriaId,
       };
 
-      const listAccountsPayable: AccountsPayableDTO[] = [];
+      const parsedData = await xmlParseJsonFromBuffer(file.buffer);
+      const nfe = mappersXml(parsedData);
 
-      for (const file of files) {
-        const parsedData = await xmlParseJson(file.path);
-        const nfe = mappersXml(parsedData);
+      const rateio = new MaxTypeByValor(itensNota).calculate({
+        produtos: nfe.Det,
+        cnpj: nfe.Cnpj,
+        valor: nfe.ValorTotal,
+      });
 
-        // const rateio = Apportionment.maxTypeByValor(
-        const rateio = new MaxTypeByValor(itensNota).calculate({
-          produtos: nfe.Det,
-          cnpj: nfe.Cnpj,
-          valor: nfe.ValorTotal,
-        });
+      console.log('parceriaId: ', arquivosTemp.parceriaId);
 
-        const newAccountPayable: AccountsPayableDTO = {
-          ParceriaId: 43,
-          PrestacaoContaId:
-            prestacao.find(
-              (prestacao) =>
-                prestacao.ano === nfe.Ano && prestacao.mes === nfe.Mes
-            )?.id ?? 0,
-          FornecedorId:
-            fornecedores.find((fornecedor) => fornecedor.CnpjCpf === nfe.Cnpj)
-              ?.Id ?? 0,
-          Competencia: nfe.DataEmissao,
-          DataVencimento: nfe.DataVencimento,
-          DataEmissao: nfe.DataEmissao,
-          NumFatura: "",
-          NFDoc: nfe.NFDoc,
-          NFDocSerie: nfe.NFDocSerie,
-          ValorParcela: nfe.ValorParcela,
-          ValorTotal: nfe.ValorTotal,
-          ParcelaPaga: 0,
-          TotalParcelas: 1,
-          TributoRetido: false,
-          IssRetido: 0,
-          InssRetido: 0,
-          IrrfRetido: 0,
-          PisPasepRetido: 0,
-          CofinsRetido: 0,
-          CsllRetido: 0,
-          PccRetido: 0,
-          NumIdentificador: "",
-          Observacao: "",
-          ArquivoTemp: arquivosTemp,
-          Rateios: (rateio ?? []).map(
-            (r: any): ApportionmentDTO => ({
-              Id: r.Id ?? 0,
-              UnidadeId: r.UnidadeId ?? 0,
-              LinhaServicoId: r.LinhaServicoId ?? 0,
-              TipoDespesaId:
-                r.TipoDespesaId === null || r.TipoDespesaId === undefined
-                  ? 0
-                  : r.TipoDespesaId,
-              Valor: r.Valor ?? 0,
-            })
-          ),
-        };
+      const newAccountPayable: AccountsPayableDTO = {
+        ParceriaId: 43,
+        PrestacaoContaId:
+          prestacao.find(
+            (prestacao) =>
+              prestacao.ano === nfe.Ano && prestacao.mes === nfe.Mes
+          )?.id ?? 0,
+        FornecedorId:
+          fornecedores.find((fornecedor) => fornecedor.CnpjCpf === nfe.Cnpj)
+            ?.Id ?? 0,
+        Competencia: nfe.DataEmissao,
+        DataVencimento: nfe.DataVencimento,
+        DataEmissao: nfe.DataEmissao,
+        NumFatura: "",
+        NFDoc: nfe.NFDoc,
+        NFDocSerie: nfe.NFDocSerie,
+        ValorParcela: nfe.ValorParcela,
+        ValorTotal: nfe.ValorTotal,
+        ArquivoNF: arquivosTemp.nomeDoArquivo,
+        ArquivoNFHash: arquivosTemp.hashArquivo,
+        ArquivoNFExtensao: arquivosTemp.extensaoArquivo,
+        ParcelaPaga: 0,
+        TotalParcelas: 1,
+        TributoRetido: false,
+        IssRetido: 0,
+        InssRetido: 0,
+        IrrfRetido: 0,
+        PisPasepRetido: 0,
+        CofinsRetido: 0,
+        CsllRetido: 0,
+        PccRetido: 0,
+        NumIdentificador: randomUUID(),
+        Observacao: "",
 
-        listAccountsPayable.push(newAccountPayable);
-      }
-      return listAccountsPayable;
+        Rateios: [
+          {
+            Id: rateio.Id,
+            UnidadeId: rateio.UnidadeId,
+            LinhaServicoId: rateio.LinhaServicoId,
+            TipoDespesaId: rateio.TipoDespesaId,
+            Valor: rateio.Valor,
+          },
+        ],
+      };
+
+      return newAccountPayable;
     } catch (error: any) {
       if (error instanceof AppError) {
-        console.log(`throw error;${error}`);
         throw error;
       }
-      return []
+      throw new Error("Erro inesperado ao criar contas a pagar.");
     }
   }
 
   async sendAccountsPayable(files: Express.Multer.File[], auth: string) {
-    const contas = await this.createAccountsPayable(files, auth);
+    const contas = await Promise.all(
+      files.map((file) => this.createAccountsPayable(file, auth))
+    );
+
     const results: ResponseAPI[] = [];
 
     for (const conta of contas) {
@@ -127,61 +128,108 @@ export class AccountsPayableService {
         const status = error?.response?.status ?? 500;
         const mensage = error?.message;
         const data = error?.response?.data;
+        console.log("ERROR: ", error.response.statusText);
+        console.log('ERROR Message: ', error.message);
+        console.log("ERROR Data: ", data);
 
         results.push({
           statusCode: status,
           success: false,
-          message: mensage,
+          message: `${mensage} - ${error.response.statusText}`,
           data: data,
         });
       }
     }
+    console.log(`results: ${results.map((r) => r.message)}`);
     return results;
   }
 
   async createPreviewAccountsPayable(
     files: Express.Multer.File[]
-  ): Promise<AccountsPayableResumeDTO[]> {
-    const previewTable: AccountsPayableResumeDTO[] = [];
+  ): Promise<ResponseAPI[]> {
+    const previewTable: ResponseAPI[] = [];
+
+    const filteredFolder = path.resolve("filtered");
+
+    if (!fs.existsSync(filteredFolder)) {
+      fs.mkdirSync(filteredFolder, { recursive: true });
+    }
 
     for (const file of files) {
-      const parseData = await xmlParseJson(file.path);
+      // const parseData = await xmlParseJson(file.path);
+      const content = file.buffer;
+      const parseData = await xmlParseJsonFromBuffer(content);
       const nfe = mappersXml(parseData);
 
-      const newAccountResumePayable: AccountsPayableResumeDTO = {
-        Fornecedor: nfe.Cnpj,
-        NFDoc: nfe.NFDoc,
-        NFDocSerie: nfe.NFDocSerie,
-        DataEmissao: nfe.DataEmissao,
-        ValorTotal: nfe.ValorTotal,
+      const isRejected = checkCFOP(nfe.Det);
+
+      if (isRejected) {
+        continue;
+      }
+
+      const filePath = path.join(filteredFolder, file.originalname);
+      fs.writeFileSync(filePath, content);
+
+      const listFornecedor = itensNota;
+
+      const fornecedor = listFornecedor.find((f) => f.cnpj === nfe.Cnpj);
+
+      const rateio = new MaxTypeByValor(itensNota).calculate({
+        produtos: Array.isArray(nfe.Det) ? nfe.Det : [nfe.Det],
+        cnpj: nfe.Cnpj,
+        valor: nfe.ValorTotal,
+      });
+
+      const statusCode = fornecedor && rateio.TipoDespesaId != 0 ? 200 : 400;
+      const success = !!fornecedor && rateio.TipoDespesaId != 0;
+      const message = !fornecedor
+        ? `CNPJ: ${nfe.Cnpj} não cadastrado`
+        : rateio.TipoDespesaId === 0
+        ? `Há itens na nota sem cadastro`
+        : fornecedor.cnpj;
+
+      const newAccountResumePayable: ResponseAPI = {
+        statusCode,
+        success,
+        message,
+
+        data: {
+          fornecedor: message,
+          NFDoc: nfe.NFDoc,
+          NFDocSerie: nfe.NFDocSerie,
+          DataEmissao: nfe.DataEmissao,
+          ValorTotal: rateio.TipoDespesaId == 0 ? 0 : rateio.Valor,
+        },
       };
+
       previewTable.push(newAccountResumePayable);
     }
     return previewTable;
   }
 
-  async getAccountsPayable(): Promise<ResponseAPI> {
-    console.log(`Bearer Token: ${getBearerToken()}`);
-    try {
-      const response = await baseUrlAPI.get(`/ContaAPagar`, {
-        headers: {
-          Authorization: `Bearer ${getBearerToken()}`,
-          Accept: "text/plain",
-        },
-      });
+  async getAccountsPayable(authHeader: string): Promise<ResponseAPI> {
+    if (!authHeader) {
       return {
-        statusCode: 200,
-        success: true,
-        message: "Accounts payable retrieved successfully",
-        data: response.data,
-      };
-    } catch (error: Error | any) {
-      return {
-        statusCode: error.response?.status || 500,
+        statusCode: 401,
         success: false,
-        message: "Failed to retrieve accounts payable",
-        data: error.response?.data || "Internal Server Error",
+        message: "Authorization header is missing",
+        data: null,
       };
     }
+    const data = await axios.get(`${this.client
+      // .base arrumar a base no sicap.client.ts
+    }/ContaAPagar`, {
+      headers: {
+        Authorization: authHeader,
+        Accept: "application/json",
+      },
+    });
+    console.log(data);
+    return {
+      statusCode: 200,
+      success: true,
+      message: "Get Accounts Payable Success",
+      data: data,
+    };
   }
 }

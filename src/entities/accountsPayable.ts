@@ -15,7 +15,9 @@ export interface AccountsPayableDTO {
   ValorTotal: number;
   ParcelaPaga: number;
   TotalParcelas: number;
-  ArquivoTemp: FileTempDTO;
+  ArquivoNF: string;
+  ArquivoNFHash: string;
+  ArquivoNFExtensao: string;
   TributoRetido: boolean;
   IssRetido: number;
   InssRetido: number;

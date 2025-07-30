@@ -1,5 +1,3 @@
-import { xmlParseJson } from "./xmlParseJson";
-
 export const mappersXml = (parsed: any): any => {
   
   const infNFe = parsed?.nfeProc?.NFe?.infNFe;

@@ -15,4 +15,7 @@ const storage = multer.diskStorage({
   },
 });
 
-export const upload = multer({ storage: storage });
+export const validateuploadFolderExists = multer({ storage: storage });
+
+const storageMemory = multer.memoryStorage();
+export const uploadInMemory = multer({ storage: storageMemory });

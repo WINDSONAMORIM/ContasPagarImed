@@ -1,5 +1,5 @@
 import { Produtos } from "../data/produtosData";
-import { AppError } from "./appError";
+import { ApportionmentDTO } from "../entities/apportionment";
 
 interface Det {
   cProd: string;
@@ -18,27 +18,40 @@ interface Props {
 
 export class MaxTypeByValor {
   constructor(private itens: Produtos[]) {}
-
-  calculate({ produtos, cnpj, valor }: Props) {
-    // const lista = Array.isArray(data.produtos) ? produtos : [produtos];
+  
+  calculate({ produtos, cnpj, valor }: Props): ApportionmentDTO {
+    
     const sumType: Record<number, number> = {};
-    const fornecedor = this.itens.find((f) => f.cnpj === cnpj);
+    const fornecedor = this.itens.find((f) => f.cnpj === cnpj) ?? 0;
 
     if (!fornecedor) {
-        console.log(`throw new AppError('Fornecedor ${cnpj} não cadasatrado',422);`)
-      throw new AppError(`Fornecedor ${cnpj} não cadasatrado`,422);
+      return {
+        Id: 0,
+        UnidadeId: 43,
+        LinhaServicoId: 1,
+        TipoDespesaId: 0,
+        Valor: 0,
+      };
     }
 
     for (const det of produtos) {
       const codigo = det?.prod?.cProd;
       const valorItem = Number(det?.prod?.vProd);
 
-      const tipo = fornecedor.itens.find(
-        (i) => i.codigo === codigo
-      )?.tipoDespesaId;
+      if (det) {        
+        // console.log("produto: ",det.prod?.CFOP);
+      }
+
+      const tipo = fornecedor.itens.find((i) => i.codigo === codigo)?.tipoDespesaId ?? 0;
 
       if (!tipo) {
-        throw new Error(`Item da nota ${codigo} não cadastrado.`);
+        return {
+          Id: 0,
+          UnidadeId: 43,
+          LinhaServicoId: 1,
+          TipoDespesaId: 0,
+          Valor: valor,
+        };
       }
       sumType[tipo] = (sumType[tipo] ?? 0) + valorItem;
     }
@@ -52,14 +65,12 @@ export class MaxTypeByValor {
         maxTipo = Number(tipoStr);
       }
     }
-    return [
-      {
-        Id: 0,
-        UnidadeId: 43,
-        LinhaServicoId: 1,
-        TipoDespesaId: maxTipo,
-        Valor: valor,
-      },
-    ];
+    return {
+      Id: 0,
+      UnidadeId: 43,
+      LinhaServicoId: 1,
+      TipoDespesaId: maxTipo ?? 0,
+      Valor: valor,
+    };
   }
 }
