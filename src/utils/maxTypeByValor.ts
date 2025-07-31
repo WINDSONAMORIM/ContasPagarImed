@@ -67,8 +67,8 @@ export class MaxTypeByValor {
     }
     return {
       Id: 0,
-      UnidadeId: 43,
-      LinhaServicoId: 1,
+      UnidadeId: 1,
+      LinhaServicoId: 43,
       TipoDespesaId: maxTipo ?? 0,
       Valor: valor,
     };
