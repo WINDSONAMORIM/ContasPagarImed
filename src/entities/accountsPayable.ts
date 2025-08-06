@@ -1,5 +1,4 @@
 import { ApportionmentDTO } from "./apportionment";
-import { FileTempDTO } from "./fileTemp";
 
 export interface AccountsPayableDTO {
   ParceriaId: number;

@@ -1,10 +1,5 @@
-import { baseUrlAPI } from "../../../config/api";
-import { getBearerToken } from "../../../config/auth";
 import { ResponseAPI } from "../../../types";
-import {
-  xmlParseJson,
-  xmlParseJsonFromBuffer,
-} from "../../../utils/xmlParseJson";
+import { xmlParseJsonFromBuffer } from "../../../utils/xmlParseJson";
 import { mappersXml } from "../../../utils/mappersXml";
 import { AccountsPayableDTO } from "../../../entities/accountsPayable";
 import { fornecedores } from "../../../data/fornecedoresData";

@@ -21,4 +21,23 @@ export class SicapClient {
     });
 
   }
+
+  async createPayRoll(auth: string) {
+    return axios.post(`${this.base}/FolhaPagamento`,{
+      headers: {
+        Authorization: auth,
+        Accept: "text/plain",
+      },
+    });
+  }
+
+  async editPayRoll(auth: string) {
+    console.log("editPayRoll called with auth:", auth);
+    // return axios.put(`${this.base}/FolhaPagamento`,{
+    //   headers: {
+    //     Authorization: auth,
+    //     Accept: "text/plain",
+    //   },
+    // });
+  }
 }
