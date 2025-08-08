@@ -9,7 +9,6 @@ export class PayRollController {
   }
 
   async createPayRollController(req: Request, res: Response): Promise<void> {
-    console.log("createPayRollController called");
     try {
       const file = req.file as Express.Multer.File;
       if (!file) {

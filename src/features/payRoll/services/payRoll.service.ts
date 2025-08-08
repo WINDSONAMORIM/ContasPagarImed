@@ -2,6 +2,8 @@ import axios from "axios";
 import { ResponseAPI } from "../../../types";
 import { xlsxParseJson } from "../../../utils/xlxsParseJson";
 import { SicapClient } from "../../../clients/sicap.client";
+import { mapperPayRoll } from "../../../utils/mapperPayRoll";
+
 
 export class PayRollService {
   private client = new SicapClient();
@@ -9,15 +11,47 @@ export class PayRollService {
     file: Express.Multer.File,
     auth: string
   ): Promise<ResponseAPI> {
-    console.log("createPayRoll called with file:", file.originalname);
+    // console.log("createPayRoll called with file:", file.originalname);
     const parsedData = await xlsxParseJson(file);
-    console.log("Parsed data:", parsedData.map((item) => item.Id));
+    // console.log("Parsed data:", parsedData);
+
+    const listPayRoll = parsedData.map((p) => mapperPayRoll(p));
+
+    try {
+      const responseListPayRoll = await Promise.all(
+        listPayRoll.map((item) => this.client.createPayRoll(auth, item))
+      );
+    } catch (error) {
+      console.error("Error creating payroll entries:", error);
+      if (axios.isAxiosError(error)) {
+        console.error("Axios error:", {
+          status: error.response?.status,
+          headers: error.response?.headers,
+          data: error.response?.data,
+        });
+        return {
+          statusCode: error.response?.status || 500,
+          success: false,
+          message: error.message,
+          data: error.response?.data,
+        };
+      }
+      console.error("Error creating payroll:", error);
+      return {
+        statusCode: error.response?.status || 500,
+        success: false,
+        message: error.message,
+        data: error.response?.data,
+      };
+    }
+
+    // console.log("List data:", listPayRoll.map((item) => this.client.createPayRoll(item)));
 
     return {
       statusCode: 201,
       success: true,
       message: "Payroll entry created successfully",
-      data: parsedData,
+      data: listPayRoll,
     };
   }
 
@@ -69,11 +103,11 @@ export class PayRollService {
         )
       );
 
-    //   console.log(
-    //     responseData.map((item: any) =>
-    //       item.Id
-    //     )
-    //   );
+      //   console.log(
+      //     responseData.map((item: any) =>
+      //       item.Id
+      //     )
+      //   );
 
       return {
         statusCode: 200,
@@ -90,4 +124,3 @@ export class PayRollService {
     }
   }
 }
-43;

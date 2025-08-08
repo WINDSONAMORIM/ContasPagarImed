@@ -1,6 +1,7 @@
 import { PayRollDTO } from "../entities/payRoll";
 
-const mapperPayRoll = (data: any): PayRollDTO => {
+export const mapperPayRoll = (data: any): PayRollDTO => {
+  // console.log("Mapping data:", data);
   return {
     id: data.Id,
     ParceriaId: data.ParceriaId,
@@ -19,7 +20,7 @@ const mapperPayRoll = (data: any): PayRollDTO => {
     TipoJornada: data.TipoJornada,
     FuncaoId: data.FuncaoId,
     DataAdmissao: new Date(data.DataAdmissao),
-    DataDesligamento: new Date(data.DataDesligamento),
+    DataDesligamento: data.DataDesligamento ? new Date(data.DataDesligamento) : null,
     NumConselhoClasse: data.NumConselhoClasse,
     AutoDeclaracaoRacial: data.AutoDeclaracaoRacial,
     NomeSocial: data.NomeSocial,
@@ -128,7 +129,7 @@ const mapperPayRoll = (data: any): PayRollDTO => {
     BaseInssFerias: data.BaseInssFerias,
     BaseInssRescisao: data.BaseInssRescisao,
     InssPatronal: data.InssPatronal,
-    InssTerceiros   : data.InssTerceiros,
+    InssTerceiros: data.InssTerceiros,
     RatFap: data.RatFap,
     DeducoesGps: data.DeducoesGps,
     Grrf: data.Grrf,
@@ -154,8 +155,5 @@ const mapperPayRoll = (data: any): PayRollDTO => {
         CargaHorariaSemanalId: unit.CargaHorariaSemanalId,
       })
     ),
-
-
-
   };
 };

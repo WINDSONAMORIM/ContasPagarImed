@@ -22,11 +22,12 @@ export class SicapClient {
 
   }
 
-  async createPayRoll(auth: string) {
-    return axios.post(`${this.base}/FolhaPagamento`,{
+  async createPayRoll(auth: string, data: any) {
+    return axios.put(`${this.base}/FolhaPagamento`, data, {
       headers: {
         Authorization: auth,
-        Accept: "text/plain",
+        Accept: "application/json",
+        "Content-Type": "application/json",
       },
     });
   }

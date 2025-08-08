@@ -16,7 +16,7 @@ export interface PayRollDTO {
   TipoJornada: number;
   FuncaoId: number;
   DataAdmissao: Date;
-  DataDesligamento: Date;
+  DataDesligamento: Date | null;
   NumConselhoClasse: string;
   AutoDeclaracaoRacial: number;
   NomeSocial: string;
