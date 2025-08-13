@@ -3,6 +3,7 @@ import { ResponseAPI } from "../../../types";
 import { xlsxParseJson } from "../../../utils/xlxsParseJson";
 import { SicapClient } from "../../../clients/sicap.client";
 import { mapperPayRoll } from "../../../utils/mapperPayRoll";
+import { PayRollDTO } from "../../../entities/payRoll";
 
 
 export class PayRollService {
@@ -11,41 +12,38 @@ export class PayRollService {
     file: Express.Multer.File,
     auth: string
   ): Promise<ResponseAPI> {
-    // console.log("createPayRoll called with file:", file.originalname);
     const parsedData = await xlsxParseJson(file);
-    // console.log("Parsed data:", parsedData);
 
-    const listPayRoll = parsedData.map((p) => mapperPayRoll(p));
+    const listPayRoll = parsedData.map((p:PayRollDTO) => mapperPayRoll(p));
+    console.log("Mapped Payroll Data:", listPayRoll);
 
-    try {
-      const responseListPayRoll = await Promise.all(
-        listPayRoll.map((item) => this.client.createPayRoll(auth, item))
-      );
-    } catch (error) {
-      console.error("Error creating payroll entries:", error);
-      if (axios.isAxiosError(error)) {
-        console.error("Axios error:", {
-          status: error.response?.status,
-          headers: error.response?.headers,
-          data: error.response?.data,
-        });
-        return {
-          statusCode: error.response?.status || 500,
-          success: false,
-          message: error.message,
-          data: error.response?.data,
-        };
-      }
-      console.error("Error creating payroll:", error);
-      return {
-        statusCode: error.response?.status || 500,
-        success: false,
-        message: error.message,
-        data: error.response?.data,
-      };
-    }
-
-    // console.log("List data:", listPayRoll.map((item) => this.client.createPayRoll(item)));
+    // try {
+    //   const responseListPayRoll = await Promise.all(
+    //     listPayRoll.map((item) => this.client.createPayRoll(auth, item))
+    //   );
+    // } catch (error) {
+    //   console.error("Error creating payroll entries:", error);
+    //   if (axios.isAxiosError(error)) {
+    //     console.error("Axios error:", {
+    //       status: error.response?.status,
+    //       headers: error.response?.headers,
+    //       data: error.response?.data,
+    //     });
+    //     return {
+    //       statusCode: error.response?.status || 500,
+    //       success: false,
+    //       message: error.message,
+    //       data: error.response?.data,
+    //     };
+    //   }
+    //   console.error("Error creating payroll:", error);
+    //   return {
+    //     statusCode: error.response?.status || 500,
+    //     success: false,
+    //     message: error.message,
+    //     data: error.response?.data,
+    //   };
+    // }
 
     return {
       statusCode: 201,
@@ -71,7 +69,9 @@ export class PayRollService {
     console.log("getPayRoll called with auth:", auth);
     try {
       const payrollData = await axios.get(
-        `${this.client.base}/FolhaPagamento/ObterPorParceriaEPrestacao/${parceriaId}/${prestacaoId}`,
+        `${this.client
+          // .base
+        }/FolhaPagamento/ObterPorParceriaEPrestacao/${parceriaId}/${prestacaoId}`,
         {
           headers: {
             Authorization: auth,
@@ -118,7 +118,7 @@ export class PayRollService {
     } catch (error) {
       console.error(
         "Error fetching payroll data:",
-        error.response.statusText || error
+        // error.response.statusText || error
       );
       throw new Error("Failed to fetch payroll data");
     }
