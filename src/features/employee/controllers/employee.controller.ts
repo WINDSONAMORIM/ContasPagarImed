@@ -9,7 +9,7 @@ export class EmployeeController{
     }
 
     async createEmployeeController(req: Request, res: Response):Promise<void>{
-        console.log("Received request to create employee entry.");
+        console.log("Passei pelo controller");
         try {
             const file = req.file as Express.Multer.File;
             if (!file) {

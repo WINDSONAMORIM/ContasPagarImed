@@ -32,6 +32,16 @@ export class SicapClient {
     });
   }
 
+  async createEmployee(auth: string, data: any) {
+    return axios.post(`${this.base}/Funcionario/Multiplos`, data, {
+      headers: {
+        Authorization: auth,
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+    });
+  }
+
   async editPayRoll(auth: string) {
     console.log("editPayRoll called with auth:", auth);
     // return axios.put(`${this.base}/FolhaPagamento`,{
