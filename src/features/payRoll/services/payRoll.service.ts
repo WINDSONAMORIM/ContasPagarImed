@@ -1,10 +1,9 @@
 import axios from "axios";
 import { ResponseAPI } from "../../../types";
-import { xlsxParseJson } from "../../../utils/xlxsParseJson";
+import { xlsxParseJson, xlsxParseJsonPayRoll } from "../../../utils/xlxsParseJson";
 import { SicapClient } from "../../../clients/sicap.client";
 import { mapperPayRoll } from "../../../utils/mapperPayRoll";
 import { PayRollDTO } from "../../../entities/payRoll";
-
 
 export class PayRollService {
   private client = new SicapClient();
@@ -12,10 +11,10 @@ export class PayRollService {
     file: Express.Multer.File,
     auth: string
   ): Promise<ResponseAPI> {
-    const parsedData = await xlsxParseJson(file);
+    const parsedData = await xlsxParseJsonPayRoll(file);
 
     const listPayRoll = parsedData.map((p:PayRollDTO) => mapperPayRoll(p));
-    console.log("Mapped Payroll Data:", listPayRoll);
+    // console.log("Mapped Payroll Data:", listPayRoll);
 
     // try {
     //   const responseListPayRoll = await Promise.all(

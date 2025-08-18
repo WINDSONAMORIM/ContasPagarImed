@@ -1,5 +1,7 @@
 import * as xlsx from "xlsx";
 import { Employee } from "../entities/employee";
+import { PayRollDTO } from "../entities/payRoll";
+import { mapperPayRoll } from "./mapperPayRoll";
 
 export const xlsxParseJson = async (file: Express.Multer.File): Promise<Employee[]> => {
   try {
@@ -33,4 +35,35 @@ export const xlsxParseJson = async (file: Express.Multer.File): Promise<Employee
     console.error("Error parsing XLSX file:", error);
     throw new Error("Failed to parse XLSX file");
   }
+};
+
+export const xlsxParseJsonPayRoll = async (file: Express.Multer.File): Promise<PayRollDTO[]> => {
+  try {
+    const workbook = xlsx.read(file.buffer, {
+      type: "buffer",
+      cellDates: true,
+    });
+    const sheetName = workbook.SheetNames[0];
+    const worksheet = workbook.Sheets[sheetName];
+
+    const jsonData = xlsx.utils.sheet_to_json<string[]>(worksheet, {
+      header: 1,
+      raw: false,
+    });
+
+    const headers = jsonData[0].map((h) => h.trim());
+    const dataRows = jsonData.slice(1);
+    console.log("XLXS Parse Json - Headers Payroll Data:", headers);
+    
+    const jsonDataFormatted: PayRollDTO[] = 
+      dataRows.map((row) => mapperPayRoll(row)
+    ); 
+
+    // console.log("XLXS Parse Json - Formatted Payroll Data:", jsonDataFormatted);
+
+    return jsonDataFormatted;
+  } catch (error) {
+    console.error("Error parsing XLSX file:", error);
+    throw new Error("Failed to parse XLSX file");
+  } 
 };
