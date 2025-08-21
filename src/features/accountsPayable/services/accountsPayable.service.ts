@@ -35,14 +35,14 @@ export class AccountsPayableService {
         hashArquivo: filesTempResult.data.HashArquivo,
         extensaoArquivo: filesTempResult.data.ExtensaoArquivo,
         cnpjInstituicao: filesTempResult.data.CnpjInstituicao,
-        parceriaId: filesTempResult.data.ParceriaId,
+        parceriaId: 43//filesTempResult.data.ParceriaId,
       };
 
       const parsedData = await xmlParseJsonFromBuffer(file.buffer);
       const nfe = mappersXml(parsedData);
 
       const rateio = new MaxTypeByValor(itensNota).calculate({
-        produtos: nfe.Det,
+        produtos: Array.isArray(nfe.Det) ? nfe.Det : [nfe.Det],
         cnpj: nfe.Cnpj,
         valor: nfe.ValorTotal,
       });
@@ -95,15 +95,32 @@ export class AccountsPayableService {
       };
 
       return newAccountPayable;
-    } catch (error: any) {
-      if (error instanceof AppError) {
-        throw error;
-      }
-      throw new Error("Erro inesperado ao criar contas a pagar.");
+    } catch (error) {
+      console.error("Error createAccountsPayable:", error);
+
+        if (axios.isAxiosError(error)) {
+          console.error("Axios error:", {
+            status: error.response?.status,
+            headers: error.response?.headers,
+            data: error.response?.data,
+          });
+        }
+
+        if (error instanceof Error) {
+          console.error("Generic error:", {
+            statusCode: 500,
+            success: false,
+            message: error.message,
+            data: null,
+          });
+        }  
+
+        throw error
     }
   }
 
   async sendAccountsPayable(files: Express.Multer.File[], auth: string) {
+    console.log("Send")
     const contas = await Promise.all(
       files.map((file) => this.createAccountsPayable(file, auth))
     );
@@ -113,6 +130,7 @@ export class AccountsPayableService {
     for (const conta of contas) {
       try {
         const { data } = await this.client.createAccount(conta, auth);
+        console.log("send: ",data)
         results.push({
           statusCode: 200,
           success: true,

@@ -1,9 +1,8 @@
 import axios from "axios";
 import { ResponseAPI } from "../../../types";
-import { xlsxParseJson, xlsxParseJsonPayRoll } from "../../../utils/xlxsParseJson";
+import { xlsxParseJsonPayRoll } from "../../../utils/xlxsParseJson";
 import { SicapClient } from "../../../clients/sicap.client";
-import { mapperPayRoll } from "../../../utils/mapperPayRoll";
-import { PayRollDTO } from "../../../entities/payRoll";
+
 
 export class PayRollService {
   private client = new SicapClient();
@@ -12,44 +11,49 @@ export class PayRollService {
     auth: string
   ): Promise<ResponseAPI> {
     const parsedData = await xlsxParseJsonPayRoll(file);
-
-    const listPayRoll = parsedData.map((p:PayRollDTO) => mapperPayRoll(p));
-    // console.log("Mapped Payroll Data:", listPayRoll);
-
-    // try {
-    //   const responseListPayRoll = await Promise.all(
-    //     listPayRoll.map((item) => this.client.createPayRoll(auth, item))
-    //   );
-    // } catch (error) {
-    //   console.error("Error creating payroll entries:", error);
-    //   if (axios.isAxiosError(error)) {
-    //     console.error("Axios error:", {
-    //       status: error.response?.status,
-    //       headers: error.response?.headers,
-    //       data: error.response?.data,
-    //     });
-    //     return {
-    //       statusCode: error.response?.status || 500,
-    //       success: false,
-    //       message: error.message,
-    //       data: error.response?.data,
-    //     };
-    //   }
-    //   console.error("Error creating payroll:", error);
-    //   return {
-    //     statusCode: error.response?.status || 500,
-    //     success: false,
-    //     message: error.message,
-    //     data: error.response?.data,
-    //   };
-    // }
-
-    return {
-      statusCode: 201,
-      success: true,
-      message: "Payroll entry created successfully",
-      data: listPayRoll,
-    };
+   
+    try {
+      const responseListPayRoll = await (
+        // parsedData.map((item) => this.client.createPayRoll(auth, item)) usado para o PUT
+        this.client.createPayRoll(auth,parsedData)
+      );
+      return {
+        statusCode: 201,
+        success: true,
+        message: "Payroll entry created successfully",
+        data: responseListPayRoll.data,
+      };
+    } catch (error) {
+      console.error("Error creating payroll entries:", error);
+      if (axios.isAxiosError(error)) {
+        console.error("Axios error:", {
+          status: error.response?.status,
+          headers: error.response?.headers,
+          data: error.response?.data,
+        });
+        return {
+          statusCode: error.response?.status || 500,
+          success: false,
+          message: error.message,
+          data: error.response?.data,
+        };
+      }
+      console.error("Error creating payroll:", error);
+      if(error instanceof Error){
+        return {
+          statusCode: 500,
+          success: false,
+          message: error.message,
+          data: null,
+        };
+      }
+      return{
+        statusCode:500,
+        success: false,
+        message: "Erro desconhecido",
+        data: null
+      }  
+    }
   }
 
   async getPayRoll(

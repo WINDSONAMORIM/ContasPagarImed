@@ -1,89 +1,12 @@
-[
-	{
-		"Id": 8,
-		"Codigo": "01.01.07",
-		"Descricao": "13º SALÁRIO",
-		"DescricaoDetalhada": "<p>GRATIFICA&Ccedil;&Atilde;O DE NATAL, OU ANTECIPA&Ccedil;&Atilde;O DA MESMA, EM FOLHA CLT &nbsp;</p>",
-		"DataAtivacao": "2023-01-01T00:00:00",
-		"DataDesativacao": "2024-12-31T00:00:00",
-		"JustificativaDesativacao": "<p>Altera&ccedil;&atilde;o conforme novo plano de contas</p>",
-		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 1,
-			"Codigo": "01",
-			"Descricao": "PESSOAL E REFLEXO"
-		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
+
 		"Id": 178,
 		"Codigo": "01.02.01",
 		"Descricao": "13º SALÁRIO",
-		"DescricaoDetalhada": "<p>Novo Plano de Contas. Ok</p>",
-		"DataAtivacao": "2025-01-01T00:00:00",
-		"DataDesativacao": null,
-		"JustificativaDesativacao": "",
-		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 1,
-			"Codigo": "01",
-			"Descricao": "PESSOAL E REFLEXO"
-		},
-		"Ativo": true,
-		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
+		
 		"Id": 194,
 		"Codigo": "01.05.01",
 		"Descricao": "13º SALÁRIO - FGTS",
-		"DescricaoDetalhada": "<p>Novo Plano de Contas. Ok</p>",
-		"DataAtivacao": "2025-01-01T00:00:00",
-		"DataDesativacao": null,
-		"JustificativaDesativacao": "",
-		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 1,
-			"Codigo": "01",
-			"Descricao": "PESSOAL E REFLEXO"
-		},
-		"Ativo": true,
-		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
+		
 		"Id": 114,
 		"Codigo": "09.02.03",
 		"Descricao": "13º SALÁRIO - INSS",
@@ -92,7 +15,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 9,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 3,
@@ -111,7 +34,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -129,7 +52,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Altera&ccedil;&atilde;o conforme novo plano de contas</p>",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 1430,
@@ -148,7 +71,7 @@
 		},
 		"Ativo": false,
 		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -166,9 +89,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -176,7 +96,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -194,9 +114,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -204,7 +121,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -222,9 +139,6 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme altera&ccedil;&atilde;o do novo plano de contas, tipo de despesa ser&aacute; ativa apenas para a data 31/12/2024</p>",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -232,7 +146,7 @@
 		},
 		"Ativo": false,
 		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -250,9 +164,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -260,7 +171,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -278,9 +189,6 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Altera&ccedil;&atilde;o conforme novo plano de contas</p>",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -288,7 +196,7 @@
 		},
 		"Ativo": false,
 		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -306,9 +214,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -316,7 +221,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -334,9 +239,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -344,7 +246,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -362,9 +264,6 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -372,7 +271,7 @@
 		},
 		"Ativo": false,
 		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": false,
@@ -390,9 +289,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -400,7 +296,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -418,9 +314,6 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Altera&ccedil;&atilde;o conforme novo plano de contas</p>",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -428,7 +321,7 @@
 		},
 		"Ativo": false,
 		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -446,9 +339,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -456,7 +346,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -474,7 +364,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa s&oacute; ser&aacute; ser&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 3,
@@ -493,7 +383,7 @@
 		},
 		"Ativo": false,
 		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -511,9 +401,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -521,7 +408,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -539,7 +426,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 3,
@@ -558,7 +445,7 @@
 		},
 		"Ativo": false,
 		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -576,9 +463,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -586,7 +470,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -604,9 +488,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -614,7 +495,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -632,7 +513,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 9,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 146,
@@ -659,7 +540,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -677,7 +558,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 6,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 41,
@@ -824,7 +705,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": false,
@@ -842,7 +723,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 6,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 3,
@@ -861,7 +742,7 @@
 		},
 		"Ativo": false,
 		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": false,
@@ -879,9 +760,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 5,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 5,
 			"Codigo": "05",
@@ -889,7 +767,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -907,7 +785,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 80,
@@ -942,7 +820,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -960,7 +838,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 62,
@@ -1019,7 +897,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -1037,9 +915,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 1,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -1047,7 +923,7 @@
 		},
 		"Ativo": false,
 		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": true,
 		"Custeio": true,
@@ -1065,9 +941,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -1075,7 +949,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": true,
 		"Custeio": true,
@@ -1093,9 +967,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 5,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 5,
 			"Codigo": "05",
@@ -1103,7 +974,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": false,
@@ -1121,9 +992,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 14,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 14,
 			"Codigo": "12",
@@ -1131,7 +999,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -1149,9 +1017,6 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Altera&ccedil;&atilde;o conforme novo plano de contas.</p>",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -1159,7 +1024,7 @@
 		},
 		"Ativo": false,
 		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -1177,9 +1042,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -1187,7 +1049,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -1205,7 +1067,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Altera&ccedil;&atilde;o conforme novo plano de contas</p>",
 		"CategoriaId": 2,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 174,
@@ -1280,7 +1142,7 @@
 		},
 		"Ativo": false,
 		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -1298,9 +1160,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 2,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 2,
 			"Codigo": "02",
@@ -1308,7 +1167,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -1326,9 +1185,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 2,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 2,
 			"Codigo": "02",
@@ -1336,7 +1192,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -1354,9 +1210,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -1364,7 +1217,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -1382,7 +1235,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 6,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 368,
@@ -1481,7 +1334,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": false,
@@ -1499,7 +1352,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativo at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 6,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 3,
@@ -1518,7 +1371,7 @@
 		},
 		"Ativo": false,
 		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": false,
@@ -1536,9 +1389,6 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa ser&aacute; ativa apenas at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -1546,7 +1396,7 @@
 		},
 		"Ativo": false,
 		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -1564,9 +1414,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -1574,7 +1421,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -1592,9 +1439,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -1602,7 +1446,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -1620,9 +1464,6 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Altera&ccedil;&atilde;o conforme novo plano de contas.</p>",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -1630,7 +1471,7 @@
 		},
 		"Ativo": false,
 		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -1648,9 +1489,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -1658,7 +1496,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -1676,9 +1514,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 9,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 9,
 			"Codigo": "09",
@@ -1686,7 +1521,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -1704,9 +1539,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 14,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 14,
 			"Codigo": "12",
@@ -1714,7 +1546,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -1732,7 +1564,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 9,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 1425,
@@ -1751,7 +1583,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -1769,9 +1601,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 9,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 9,
 			"Codigo": "09",
@@ -1779,7 +1609,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": false,
@@ -1797,7 +1627,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 9,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 3,
@@ -1816,7 +1646,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -1834,7 +1664,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 10,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 1088,
@@ -1853,7 +1683,7 @@
 		},
 		"Ativo": false,
 		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -1871,9 +1701,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 10,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 10,
 			"Codigo": "10",
@@ -1881,7 +1708,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -1899,9 +1726,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 10,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 10,
 			"Codigo": "10",
@@ -1909,7 +1733,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -1927,7 +1751,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Altera&ccedil;&atilde;o conforme novo plano de contas.</p>",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 508,
@@ -1946,7 +1770,7 @@
 		},
 		"Ativo": false,
 		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": true,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -1964,9 +1788,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 9,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 9,
 			"Codigo": "09",
@@ -1974,7 +1795,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -1992,7 +1813,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Altera&ccedil;&atilde;o conforme novo plano de contas.</p>",
 		"CategoriaId": 2,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 95,
@@ -2011,7 +1832,7 @@
 		},
 		"Ativo": false,
 		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -2029,9 +1850,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 9,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 9,
 			"Codigo": "09",
@@ -2039,7 +1858,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": false,
@@ -2057,9 +1876,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 9,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 9,
 			"Codigo": "09",
@@ -2067,7 +1883,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -2080,63 +1896,7 @@
 		"Id": 57,
 		"Codigo": "03.01.01",
 		"Descricao": "DROGAS E MEDICAMENTOS DIVERSOS",
-		"DescricaoDetalhada": "",
-		"DataAtivacao": "2023-01-01T00:00:00",
-		"DataDesativacao": null,
-		"JustificativaDesativacao": "",
-		"CategoriaId": 3,
-		"ContaSintetica": false,
-		"Cnaes": [
-			{
-				"Id": 239,
-				"CodigoCNAE": "4644301",
-				"Descricao": "Comércio atacadista de medicamentos e drogas de uso humano",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 240,
-				"CodigoCNAE": "4644302",
-				"Descricao": "Comércio atacadista de medicamentos e drogas de uso veterinário",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 331,
-				"CodigoCNAE": "4771704",
-				"Descricao": "Comércio varejista de medicamentos veterinários",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 344,
-				"CodigoCNAE": "4771703",
-				"Descricao": "Comércio varejista de produtos farmacêuticos homeopáticos",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 345,
-				"CodigoCNAE": "4771702",
-				"Descricao": "Comércio varejista de produtos farmacêuticos, com manipulação de fórmulas",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 346,
-				"CodigoCNAE": "4771701",
-				"Descricao": "Comércio varejista de produtos farmacêuticos, sem manipulação de fórmulas",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			}
-		],
-		"TipoDeDespesaCnaes": [],
+
 		"Categoria": {
 			"Id": 3,
 			"Codigo": "03",
@@ -2144,7 +1904,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -2162,9 +1922,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 4,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 4,
 			"Codigo": "04",
@@ -2172,7 +1930,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": false,
@@ -2190,7 +1948,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 503,
@@ -2241,7 +1999,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -2259,9 +2017,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 10,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 10,
 			"Codigo": "10",
@@ -2269,7 +2025,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": false,
@@ -2287,9 +2043,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 10,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 10,
 			"Codigo": "10",
@@ -2297,7 +2051,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": false,
@@ -2315,9 +2069,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 5,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 5,
 			"Codigo": "05",
@@ -2325,7 +2077,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": false,
@@ -2343,9 +2095,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 1,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -2353,7 +2103,7 @@
 		},
 		"Ativo": false,
 		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": true,
 		"Custeio": true,
@@ -2371,9 +2121,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -2381,7 +2129,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": true,
 		"Custeio": true,
@@ -2399,9 +2147,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 4,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 4,
 			"Codigo": "04",
@@ -2409,7 +2155,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": false,
@@ -2427,9 +2173,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -2437,7 +2181,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": true,
 		"Custeio": true,
@@ -2455,9 +2199,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -2465,7 +2207,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": true,
 		"Custeio": true,
@@ -2483,7 +2225,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 9,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 489,
@@ -2526,7 +2268,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -2544,9 +2286,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 7,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 7,
 			"Codigo": "07",
@@ -2554,7 +2294,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": false,
@@ -2591,7 +2331,7 @@
 		},
 		"Ativo": false,
 		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": false,
@@ -2609,7 +2349,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 7,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 28,
@@ -2718,7 +2458,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 7,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 3,
@@ -2755,7 +2495,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 7,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 23,
@@ -2824,7 +2564,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 7,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 3,
@@ -2861,9 +2601,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 7,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 7,
 			"Codigo": "07",
@@ -2871,7 +2609,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": false,
@@ -2889,9 +2627,6 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa ativa apenas at&eacute; a data 31/12/2024.</p>",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -2899,7 +2634,7 @@
 		},
 		"Ativo": false,
 		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -2917,9 +2652,6 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Altera&ccedil;&atilde;o conforme novo plano de contas</p>",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -2927,7 +2659,7 @@
 		},
 		"Ativo": false,
 		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -2945,9 +2677,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -2955,7 +2684,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -2973,9 +2702,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -2983,7 +2709,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -3001,7 +2727,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Altera&ccedil;&atilde;o conforme novo plano de contas.</p>",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 3,
@@ -3020,7 +2746,7 @@
 		},
 		"Ativo": false,
 		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -3038,9 +2764,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -3048,7 +2771,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -3066,7 +2789,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 9,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 3,
@@ -3085,7 +2808,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -3103,7 +2826,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Altera&ccedil;&atilde;o conforme novo plano de contas, tipo de despesas ser&aacute; ativa a data 31/12/2024.</p>",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 1430,
@@ -3122,7 +2845,7 @@
 		},
 		"Ativo": false,
 		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -3140,9 +2863,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -3150,7 +2870,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -3168,9 +2888,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -3178,7 +2895,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -3196,9 +2913,6 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa ser&aacute; ativa apenas a data 31/12/2024</p>",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -3206,7 +2920,7 @@
 		},
 		"Ativo": false,
 		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -3224,9 +2938,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -3234,7 +2945,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -3252,9 +2963,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -3262,7 +2970,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -3280,9 +2988,6 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Altera&ccedil;&atilde;o conforme novo plano de contas</p>",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -3290,7 +2995,7 @@
 		},
 		"Ativo": false,
 		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -3308,7 +3013,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Altera&ccedil;&atilde;o conforme novo plano de contas</p>",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 3,
@@ -3327,7 +3032,7 @@
 		},
 		"Ativo": false,
 		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -3345,9 +3050,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -3355,7 +3057,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -3373,9 +3075,6 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -3383,7 +3082,7 @@
 		},
 		"Ativo": false,
 		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -3401,9 +3100,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -3411,7 +3107,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -3429,9 +3125,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 9,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 9,
 			"Codigo": "09",
@@ -3439,7 +3132,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -3457,7 +3150,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 9,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 220,
@@ -3484,7 +3177,7 @@
 		},
 		"Ativo": true,
 		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
+		
 		"FornecedoresRPA": false,
 		"EquipeDimensionada": false,
 		"Custeio": true,
@@ -3493,1064 +3186,15 @@
 		"HoraExtra": false,
 		"RateioNegativo": false
 	},
-	{
-		"Id": 42,
-		"Codigo": "02.01.02",
-		"Descricao": "GASES MEDICINAIS",
-		"DescricaoDetalhada": "<p>ok</p>",
-		"DataAtivacao": "2023-01-01T00:00:00",
-		"DataDesativacao": "2024-12-31T00:00:00",
-		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
-		"CategoriaId": 2,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 2,
-			"Codigo": "02",
-			"Descricao": "MATERIAL DE CONSUMO"
-		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
+
 		"Id": 243,
 		"Codigo": "03.01.05",
 		"Descricao": "GASES MEDICINAIS",
-		"DescricaoDetalhada": "<p>Novo Plano de Contas. Ok</p>",
-		"DataAtivacao": "2025-01-01T00:00:00",
-		"DataDesativacao": null,
-		"JustificativaDesativacao": "",
-		"CategoriaId": 3,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 3,
-			"Codigo": "03",
-			"Descricao": "MATERIAL DE CONSUMO ASSISTENCIAL"
-		},
-		"Ativo": true,
-		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
-		"Id": 53,
-		"Codigo": "02.04.04",
-		"Descricao": "GÊNEROS ALIMENTÍCIOS",
-		"DescricaoDetalhada": "<p>.</p>",
-		"DataAtivacao": "2023-01-01T00:00:00",
-		"DataDesativacao": "2024-12-31T00:00:00",
-		"JustificativaDesativacao": "<p>Desativado conforme portaria 003/2025</p>",
-		"CategoriaId": 2,
-		"ContaSintetica": false,
-		"Cnaes": [
-			{
-				"Id": 172,
-				"CodigoCNAE": "4637102",
-				"Descricao": "Comércio atacadista de açúcar",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 176,
-				"CodigoCNAE": "4623109",
-				"Descricao": "Comércio atacadista de alimentos para animais",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 184,
-				"CodigoCNAE": "4634602",
-				"Descricao": "Comércio atacadista de aves abatidas e derivados",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 186,
-				"CodigoCNAE": "4635403",
-				"Descricao": "Comércio atacadista de bebidas com atividade de fracionamento e acondicionamento associada",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 192,
-				"CodigoCNAE": "4621400",
-				"Descricao": "Comércio atacadista de café em grão",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 196,
-				"CodigoCNAE": "4634699",
-				"Descricao": "Comércio atacadista de carnes e derivados de outros animais",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 198,
-				"CodigoCNAE": "4632003",
-				"Descricao": "Comércio atacadista de cereais e leguminosas beneficiados, farinhas, amidos e féculas, com atividade de fracionamento e acondicionamento associada",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 200,
-				"CodigoCNAE": "4637107",
-				"Descricao": "Comércio atacadista de chocolates, confeitos, balas, bombons e semelhantes",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 173,
-				"CodigoCNAE": "4635401",
-				"Descricao": "Comércio atacadista de água mineral",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 187,
-				"CodigoCNAE": "4635499",
-				"Descricao": "Comércio atacadista de bebidas não especificadas anteriormente",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 193,
-				"CodigoCNAE": "4637101",
-				"Descricao": "Comércio atacadista de café torrado, moído e solúvel",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 195,
-				"CodigoCNAE": "4634601",
-				"Descricao": "Comércio atacadista de carnes bovinas e suínas e derivados",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 197,
-				"CodigoCNAE": "4632001",
-				"Descricao": "Comércio atacadista de cereais e leguminosas beneficiados",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 213,
-				"CodigoCNAE": "4632002",
-				"Descricao": "Comércio atacadista de farinhas, amidos e féculas",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 217,
-				"CodigoCNAE": "4633801",
-				"Descricao": "Comércio atacadista de frutas, verduras, raízes, tubérculos, hortaliças e legumes frescos",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 223,
-				"CodigoCNAE": "4631100",
-				"Descricao": "Comércio atacadista de leite e laticínios",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 234,
-				"CodigoCNAE": "4637105",
-				"Descricao": "Comércio atacadista de massas alimentícias",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 238,
-				"CodigoCNAE": "4623199",
-				"Descricao": "Comércio atacadista de matérias-primas agrícolas não especificadas anteriormente",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 242,
-				"CodigoCNAE": "4691500",
-				"Descricao": "Comércio atacadista de mercadorias em geral, com predominância de produtos alimentícios",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 252,
-				"CodigoCNAE": "4639701",
-				"Descricao": "Comércio atacadista de produtos alimentícios em geral",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 266,
-				"CodigoCNAE": "4623106",
-				"Descricao": "Comércio atacadista de sementes, flores, plantas e gramas",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 268,
-				"CodigoCNAE": "4622200",
-				"Descricao": "Comércio atacadista de soja",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 270,
-				"CodigoCNAE": "4637106",
-				"Descricao": "Comércio atacadista de sorvetes",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 276,
-				"CodigoCNAE": "4637199",
-				"Descricao": "Comércio atacadista especializado em outros produtos alimentícios não especificados anteriormente",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 306,
-				"CodigoCNAE": "4723700",
-				"Descricao": "Comércio varejista de bebidas",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 332,
-				"CodigoCNAE": "4711301",
-				"Descricao": "Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios – hipermercados",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 334,
-				"CodigoCNAE": "4711302",
-				"Descricao": "Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios – supermercados",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 245,
-				"CodigoCNAE": "4637103",
-				"Descricao": "Comércio atacadista de óleos e gorduras",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 249,
-				"CodigoCNAE": "4637104",
-				"Descricao": "Comércio atacadista de pães, bolos, biscoitos e similares",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 251,
-				"CodigoCNAE": "4634603",
-				"Descricao": "Comércio atacadista de pescados e frutos do mar",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 253,
-				"CodigoCNAE": "4639702",
-				"Descricao": "Comércio atacadista de produtos alimentícios em geral, com atividade de fracionamento e acondicionamento associada",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 311,
-				"CodigoCNAE": "4722901",
-				"Descricao": "Comércio varejista de carnes – açougues",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 315,
-				"CodigoCNAE": "4721104",
-				"Descricao": "Comércio varejista de doces, balas, bombons e semelhantes",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 321,
-				"CodigoCNAE": "4724500",
-				"Descricao": "Comércio varejista de hortifrutigranjeiros",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 323,
-				"CodigoCNAE": "4721103",
-				"Descricao": "Comércio varejista de laticínios e frios",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 333,
-				"CodigoCNAE": "4712100",
-				"Descricao": "Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios – minimercados, mercearias e armazéns",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 343,
-				"CodigoCNAE": "4729699",
-				"Descricao": "Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios não especificados anteriormente",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 418,
-				"CodigoCNAE": "111301",
-				"Descricao": "Cultivo de arroz",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 999,
-				"CodigoCNAE": "4721102",
-				"Descricao": "Padaria e confeitaria com predominância de revenda",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1001,
-				"CodigoCNAE": "4722902",
-				"Descricao": "Peixaria",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1258,
-				"CodigoCNAE": "0111301",
-				"Descricao": "Cultivo de Arroz",
-				"Anexo": "V",
-				"FatorR": "S",
-				"Aliquota": 15.50
-			},
-			{
-				"Id": 1259,
-				"CodigoCNAE": "0111302",
-				"Descricao": "Cultivo de Milho",
-				"Anexo": "V",
-				"FatorR": "S",
-				"Aliquota": 15.50
-			},
-			{
-				"Id": 1260,
-				"CodigoCNAE": "0112101",
-				"Descricao": "Cultivo de algodão herbáceo",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1261,
-				"CodigoCNAE": "0112102",
-				"Descricao": "Cultivo de juta",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1262,
-				"CodigoCNAE": "0112199",
-				"Descricao": "Cultivo de outras fibras de lavoura temporária não especificadas anteriormente",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1263,
-				"CodigoCNAE": "0113000",
-				"Descricao": "Cultivo de cana-de-açúcar",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1264,
-				"CodigoCNAE": "0114800",
-				"Descricao": "Cultivo de fumo",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1265,
-				"CodigoCNAE": "0115600",
-				"Descricao": "Cultivo de soja",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1266,
-				"CodigoCNAE": "0116401",
-				"Descricao": "Cultivo de amendoim",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1267,
-				"CodigoCNAE": "0116402",
-				"Descricao": "Cultivo de girassol",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1268,
-				"CodigoCNAE": "0116403",
-				"Descricao": "Cultivo de mamona",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1269,
-				"CodigoCNAE": "0116499",
-				"Descricao": "Cultivo de outras oleaginosas de lavoura temporária não especificadas anteriormente",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1270,
-				"CodigoCNAE": "0119901",
-				"Descricao": "Cultivo de abacaxi",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1271,
-				"CodigoCNAE": "0119902",
-				"Descricao": "Cultivo de alho",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1272,
-				"CodigoCNAE": "0119903",
-				"Descricao": "Cultivo de batata-inglesa",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1273,
-				"CodigoCNAE": "0119904",
-				"Descricao": "Cultivo de cebola",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1274,
-				"CodigoCNAE": "0119905",
-				"Descricao": "Cultivo de feijão",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1275,
-				"CodigoCNAE": "0119906",
-				"Descricao": "Cultivo de mandioca",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1276,
-				"CodigoCNAE": "0119907",
-				"Descricao": "Cultivo de melão",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1277,
-				"CodigoCNAE": "0119908",
-				"Descricao": "Cultivo de melancia",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1278,
-				"CodigoCNAE": "0119909",
-				"Descricao": "Cultivo de tomate rasteiro",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1279,
-				"CodigoCNAE": "0119999",
-				"Descricao": "Cultivo de outras plantas de lavoura temporária não especificadas anteriormente",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1280,
-				"CodigoCNAE": "0121101",
-				"Descricao": "Horticultura, exceto morango",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1281,
-				"CodigoCNAE": "0121102",
-				"Descricao": "Cultivo de morango",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1282,
-				"CodigoCNAE": "0122900",
-				"Descricao": "Cultivo de flores e plantas ornamentais",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1283,
-				"CodigoCNAE": "0131800",
-				"Descricao": "Cultivo de laranja",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1284,
-				"CodigoCNAE": "0132600",
-				"Descricao": "Cultivo de uva",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1285,
-				"CodigoCNAE": "0133401",
-				"Descricao": "Cultivo de açaí",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1286,
-				"CodigoCNAE": "0133402",
-				"Descricao": "Cultivo de banana",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1287,
-				"CodigoCNAE": "0133403",
-				"Descricao": "Cultivo de caju",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1288,
-				"CodigoCNAE": "0133404",
-				"Descricao": "Cultivo de cítricos, exceto laranja",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1289,
-				"CodigoCNAE": "0133405",
-				"Descricao": "Cultivo de coco-da-baía",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1290,
-				"CodigoCNAE": "0133406",
-				"Descricao": "Cultivo de guaraná",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1291,
-				"CodigoCNAE": "0133407",
-				"Descricao": "Cultivo de maçã",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1292,
-				"CodigoCNAE": "0133408",
-				"Descricao": "Cultivo de mamão",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1293,
-				"CodigoCNAE": "0133409",
-				"Descricao": "Cultivo de maracujá",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1294,
-				"CodigoCNAE": "0133410",
-				"Descricao": "Cultivo de manga",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1295,
-				"CodigoCNAE": "0133411",
-				"Descricao": "Cultivo de pêssego",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1296,
-				"CodigoCNAE": "0133499",
-				"Descricao": "Cultivo de frutas de lavoura permanente não especificadas anteriormente",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1297,
-				"CodigoCNAE": "0134200",
-				"Descricao": "Cultivo de café",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1298,
-				"CodigoCNAE": "0135100",
-				"Descricao": "Cultivo de cacau",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1299,
-				"CodigoCNAE": "0139301",
-				"Descricao": "Cultivo de chá-da-índia",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1300,
-				"CodigoCNAE": "0139302",
-				"Descricao": "Cultivo de erva-mate",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1301,
-				"CodigoCNAE": "0139303",
-				"Descricao": "Cultivo de pimenta-do-reino",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1302,
-				"CodigoCNAE": "0139304",
-				"Descricao": "Cultivo de plantas para condimento, exceto pimenta-do-reino",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1303,
-				"CodigoCNAE": "0139305",
-				"Descricao": "Cultivo de dendê",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1304,
-				"CodigoCNAE": "0139306",
-				"Descricao": "Cultivo de seringueira",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1305,
-				"CodigoCNAE": "0139399",
-				"Descricao": "Cultivo de outras plantas de lavoura permanente não especificadas anteriormente",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1310,
-				"CodigoCNAE": "0151202",
-				"Descricao": "Criação de bovinos para leite",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1311,
-				"CodigoCNAE": "0151203",
-				"Descricao": "Criação de bovinos, exceto para corte e leite",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1312,
-				"CodigoCNAE": "0152101",
-				"Descricao": "Criação de bufalinos",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1313,
-				"CodigoCNAE": "0152102",
-				"Descricao": "Criação de eqüinos",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1314,
-				"CodigoCNAE": "0152103",
-				"Descricao": "Criação de asininos e muares",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1315,
-				"CodigoCNAE": "0153901",
-				"Descricao": "Criação de caprinos",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1316,
-				"CodigoCNAE": "0153902",
-				"Descricao": "Criação de ovinos, inclusive para produção de lã",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1317,
-				"CodigoCNAE": "0154700",
-				"Descricao": "Criação de suínos",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1318,
-				"CodigoCNAE": "0155501",
-				"Descricao": "Criação de frangos para corte",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1321,
-				"CodigoCNAE": "0155504",
-				"Descricao": "Criação de aves, exceto galináceos",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1322,
-				"CodigoCNAE": "0155505",
-				"Descricao": "Produção de ovos",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1323,
-				"CodigoCNAE": "0159801",
-				"Descricao": "Apicultura",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1355,
-				"CodigoCNAE": "0311601",
-				"Descricao": "Pesca de peixes em água salgada",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1356,
-				"CodigoCNAE": "0311602",
-				"Descricao": "Pesca de crustáceos e moluscos em água salgada",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1357,
-				"CodigoCNAE": "0311603",
-				"Descricao": "Coleta de outros produtos marinhos",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1359,
-				"CodigoCNAE": "0312401",
-				"Descricao": "Pesca de peixes em água doce",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1360,
-				"CodigoCNAE": "0312402",
-				"Descricao": "Pesca de crustáceos e moluscos em água doce",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1363,
-				"CodigoCNAE": "0321301",
-				"Descricao": "Criação de peixes em água salgada e salobra",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1364,
-				"CodigoCNAE": "0321302",
-				"Descricao": "Criação de camarões em água salgada e salobra",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1365,
-				"CodigoCNAE": "0321303",
-				"Descricao": "Criação de ostras e mexilhões em água salgada e salobra",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1366,
-				"CodigoCNAE": "0321304",
-				"Descricao": "Criação de peixes ornamentais em água salgada e salobra",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1367,
-				"CodigoCNAE": "0321305",
-				"Descricao": "Atividades de apoio à aqüicultura em água salgada e salobra",
-				"Anexo": "III",
-				"FatorR": "N",
-				"Aliquota": 6.00
-			},
-			{
-				"Id": 1369,
-				"CodigoCNAE": "0322101",
-				"Descricao": "Criação de peixes em água doce",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1370,
-				"CodigoCNAE": "0322102",
-				"Descricao": "Criação de camarões em água doce",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1371,
-				"CodigoCNAE": "0322103",
-				"Descricao": "Criação de ostras e mexilhões em água doce",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1372,
-				"CodigoCNAE": "0322104",
-				"Descricao": "Criação de peixes ornamentais em água doce",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1373,
-				"CodigoCNAE": "0322105",
-				"Descricao": "Ranicultura",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1374,
-				"CodigoCNAE": "0322106",
-				"Descricao": "Criação de jacaré",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 1434,
-				"CodigoCNAE": "0111303",
-				"Descricao": "Cultivo de trigo",
-				"Anexo": "V",
-				"FatorR": "S",
-				"Aliquota": 15.50
-			},
-			{
-				"Id": 1435,
-				"CodigoCNAE": "0111399",
-				"Descricao": "Cultivo de outros cereais não especificados anteriormente",
-				"Anexo": "V",
-				"FatorR": "S",
-				"Aliquota": 15.50
-			}
-		],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 2,
-			"Codigo": "02",
-			"Descricao": "MATERIAL DE CONSUMO"
-		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
+
 		"Id": 235,
 		"Codigo": "02.02.05",
 		"Descricao": "GÊNEROS ALIMENTÍCIOS",
-		"DescricaoDetalhada": "<p>Novo Plano de Contas. Ok</p>",
-		"DataAtivacao": "2025-01-01T00:00:00",
-		"DataDesativacao": null,
-		"JustificativaDesativacao": "",
-		"CategoriaId": 2,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 2,
-			"Codigo": "02",
-			"Descricao": "MATERIAL DE CONSUMO"
-		},
-		"Ativo": true,
-		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
+		
 		"Id": 4,
 		"Codigo": "01.01.03",
 		"Descricao": "GRATIFICAÇÃO",
@@ -4559,9 +3203,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -4587,9 +3228,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -4615,9 +3253,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 4,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 4,
 			"Codigo": "04",
@@ -4680,9 +3316,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 5,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 5,
 			"Codigo": "05",
@@ -4708,7 +3342,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Alterado conforme novo plano de contas.</p>",
 		"CategoriaId": 8,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 3,
@@ -4725,16 +3359,6 @@
 			"Codigo": "08",
 			"Descricao": "LOCAÇÃO"
 		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
 	},
 	{
 		"Id": 90,
@@ -4745,9 +3369,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 5,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 5,
 			"Codigo": "05",
@@ -4773,9 +3394,6 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 4,
 			"Codigo": "04",
@@ -4801,9 +3419,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 4,
 			"Codigo": "04",
@@ -4829,9 +3444,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 4,
 			"Codigo": "04",
@@ -4857,7 +3469,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Alterado conforme novo plano de contas.</p>",
 		"CategoriaId": 7,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 3,
@@ -4894,24 +3506,11 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 9,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 9,
 			"Codigo": "09",
 			"Descricao": "DESPESAS DIVERSAS"
 		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
 	},
 	{
 		"Id": 291,
@@ -4922,9 +3521,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 9,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 9,
 			"Codigo": "09",
@@ -4950,9 +3546,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 4,
 			"Codigo": "04",
@@ -4978,7 +3571,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Alterado conforme novo plano de contas.</p>",
 		"CategoriaId": 8,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 3,
@@ -4995,16 +3588,6 @@
 			"Codigo": "08",
 			"Descricao": "LOCAÇÃO"
 		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
 	},
 	{
 		"Id": 91,
@@ -5015,9 +3598,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 5,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 5,
 			"Codigo": "05",
@@ -5043,9 +3623,6 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Altera&ccedil;&atilde;o conforme novo plano de contas.</p>",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 4,
 			"Codigo": "04",
@@ -5071,7 +3648,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 8,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 3,
@@ -5088,16 +3665,6 @@
 			"Codigo": "08",
 			"Descricao": "LOCAÇÃO"
 		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
 	},
 	{
 		"Id": 88,
@@ -5108,9 +3675,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 5,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 5,
 			"Codigo": "05",
@@ -5136,9 +3700,6 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 4,
 			"Codigo": "04",
@@ -5164,9 +3725,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 4,
 			"Codigo": "04",
@@ -5192,9 +3750,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 4,
 			"Codigo": "04",
@@ -5220,9 +3775,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 2,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 2,
 			"Codigo": "02",
@@ -5248,9 +3800,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -5276,9 +3825,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 9,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 9,
 			"Codigo": "09",
@@ -5304,9 +3850,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 7,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 7,
 			"Codigo": "07",
@@ -5332,9 +3875,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 6,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 6,
 			"Codigo": "06",
@@ -5360,9 +3900,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 4,
 			"Codigo": "04",
@@ -5388,9 +3925,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 3,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 3,
 			"Codigo": "03",
@@ -5416,9 +3950,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 8,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 8,
 			"Codigo": "08",
@@ -5444,9 +3975,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 5,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 5,
 			"Codigo": "05",
@@ -5472,9 +4000,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 14,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 14,
 			"Codigo": "12",
@@ -5500,9 +4026,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 4,
 			"Codigo": "04",
@@ -5528,7 +4051,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 892,
@@ -5561,16 +4084,6 @@
 			"Codigo": "04",
 			"Descricao": "SERVIÇOS DE TERCEIROS"
 		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
 	},
 	{
 		"Id": 128,
@@ -5581,7 +4094,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa s&oacute; ser&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 3,
@@ -5598,16 +4111,6 @@
 			"Codigo": "01",
 			"Descricao": "PESSOAL E REFLEXO"
 		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
 	},
 	{
 		"Id": 64,
@@ -5618,7 +4121,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 98,
@@ -5679,9 +4182,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 8,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 8,
 			"Codigo": "08",
@@ -5707,9 +4208,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 8,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 8,
 			"Codigo": "08",
@@ -5735,9 +4234,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 8,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 8,
 			"Codigo": "08",
@@ -5763,9 +4259,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 8,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 8,
 			"Codigo": "08",
@@ -5791,7 +4284,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 8,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 384,
@@ -5839,399 +4332,15 @@
 		"Id": 105,
 		"Codigo": "08.01.04",
 		"Descricao": "LOCAÇÃO DE VEÍCULOS",
-		"DescricaoDetalhada": "<p>OK</p>",
-		"DataAtivacao": "2023-01-01T00:00:00",
-		"DataDesativacao": null,
-		"JustificativaDesativacao": "",
-		"CategoriaId": 8,
-		"ContaSintetica": false,
-		"Cnaes": [
-			{
-				"Id": 895,
-				"CodigoCNAE": "7711000",
-				"Descricao": "Locação de automóveis sem condutor",
-				"Anexo": "III",
-				"FatorR": "N",
-				"Aliquota": 6.00
-			}
-		],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 8,
-			"Codigo": "08",
-			"Descricao": "LOCAÇÃO"
-		},
-		"Ativo": true,
-		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
-		"Id": 167,
-		"Codigo": "05",
-		"Descricao": "MANUTENÇÃO",
-		"DescricaoDetalhada": "<p>MANUTEN&Ccedil;&Atilde;O</p>",
-		"DataAtivacao": "2023-01-01T00:00:00",
-		"DataDesativacao": null,
-		"JustificativaDesativacao": "",
-		"CategoriaId": 5,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 5,
-			"Codigo": "05",
-			"Descricao": "MANUTENÇÃO"
-		},
-		"Ativo": true,
-		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": false,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
-		"Id": 82,
-		"Codigo": "05.01",
-		"Descricao": "MANUTENÇÃO",
-		"DescricaoDetalhada": "<p>ok</p>",
-		"DataAtivacao": "2023-01-01T00:00:00",
-		"DataDesativacao": null,
-		"JustificativaDesativacao": "",
-		"CategoriaId": 5,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 5,
-			"Codigo": "05",
-			"Descricao": "MANUTENÇÃO"
-		},
-		"Ativo": true,
-		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": false,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
-		"Id": 85,
-		"Codigo": "05.01.03",
-		"Descricao": "MANUTENÇÃO DE EQUIPAMENTO ASSISTENCIAL",
-		"DescricaoDetalhada": "<p>ok</p>",
-		"DataAtivacao": "2023-01-01T00:00:00",
-		"DataDesativacao": "2024-12-31T00:00:00",
-		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
-		"CategoriaId": 5,
-		"ContaSintetica": false,
-		"Cnaes": [
-			{
-				"Id": 905,
-				"CodigoCNAE": "3312102",
-				"Descricao": "Manutenção e reparação de aparelhos e instrumentos de medida, teste e controle",
-				"Anexo": "III",
-				"FatorR": "N",
-				"Aliquota": 6.00
-			},
-			{
-				"Id": 906,
-				"CodigoCNAE": "3312103",
-				"Descricao": "Manutenção e reparação de aparelhos eletromédicos e eletroterapêuticos e equipamentos de irradiação",
-				"Anexo": "III",
-				"FatorR": "N",
-				"Aliquota": 6.00
-			},
-			{
-				"Id": 907,
-				"CodigoCNAE": "3313902",
-				"Descricao": "Manutenção e reparação de baterias e acumuladores elétricos, exceto para veículos",
-				"Anexo": "III",
-				"FatorR": "N",
-				"Aliquota": 6.00
-			},
-			{
-				"Id": 908,
-				"CodigoCNAE": "3314704",
-				"Descricao": "Manutenção e reparação de compressores",
-				"Anexo": "III",
-				"FatorR": "N",
-				"Aliquota": 6.00
-			},
-			{
-				"Id": 912,
-				"CodigoCNAE": "3312104",
-				"Descricao": "Manutenção e reparação de equipamentos e instrumentos ópticos",
-				"Anexo": "III",
-				"FatorR": "N",
-				"Aliquota": 6.00
-			},
-			{
-				"Id": 930,
-				"CodigoCNAE": "3313999",
-				"Descricao": "Manutenção e reparação de máquinas, aparelhos e materiais elétricos não especificados anteriormente",
-				"Anexo": "III",
-				"FatorR": "N",
-				"Aliquota": 6.00
-			}
-		],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 5,
-			"Codigo": "05",
-			"Descricao": "MANUTENÇÃO"
-		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
+	
 		"Id": 84,
 		"Codigo": "05.01.02",
 		"Descricao": "MANUTENÇÃO DE EQUIPAMENTOS",
-		"DescricaoDetalhada": "<p>ok</p>",
-		"DataAtivacao": "2023-01-01T00:00:00",
-		"DataDesativacao": null,
-		"JustificativaDesativacao": "",
-		"CategoriaId": 5,
-		"ContaSintetica": false,
-		"Cnaes": [
-			{
-				"Id": 214,
-				"CodigoCNAE": "4672900",
-				"Descricao": "Comércio atacadista de ferragens e ferramentas",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 905,
-				"CodigoCNAE": "3312102",
-				"Descricao": "Manutenção e reparação de aparelhos e instrumentos de medida, teste e controle",
-				"Anexo": "III",
-				"FatorR": "N",
-				"Aliquota": 6.00
-			},
-			{
-				"Id": 907,
-				"CodigoCNAE": "3313902",
-				"Descricao": "Manutenção e reparação de baterias e acumuladores elétricos, exceto para veículos",
-				"Anexo": "III",
-				"FatorR": "N",
-				"Aliquota": 6.00
-			},
-			{
-				"Id": 908,
-				"CodigoCNAE": "3314704",
-				"Descricao": "Manutenção e reparação de compressores",
-				"Anexo": "III",
-				"FatorR": "N",
-				"Aliquota": 6.00
-			},
-			{
-				"Id": 913,
-				"CodigoCNAE": "3319800",
-				"Descricao": "Manutenção e reparação de equipamentos e produtos não especificados anteriormente",
-				"Anexo": "III",
-				"FatorR": "N",
-				"Aliquota": 6.00
-			},
-			{
-				"Id": 914,
-				"CodigoCNAE": "3314702",
-				"Descricao": "Manutenção e reparação de equipamentos hidráulicos e pneumáticos, exceto válvulas",
-				"Anexo": "III",
-				"FatorR": "N",
-				"Aliquota": 6.00
-			},
-			{
-				"Id": 915,
-				"CodigoCNAE": "3313901",
-				"Descricao": "Manutenção e reparação de geradores, transformadores e motores elétricos",
-				"Anexo": "III",
-				"FatorR": "N",
-				"Aliquota": 6.00
-			},
-			{
-				"Id": 916,
-				"CodigoCNAE": "3314709",
-				"Descricao": "Manutenção e reparação de máquinas de escrever, calcular e de outros equipamentos não-eletrônicos para escritório",
-				"Anexo": "III",
-				"FatorR": "N",
-				"Aliquota": 6.00
-			},
-			{
-				"Id": 925,
-				"CodigoCNAE": "3314710",
-				"Descricao": "Manutenção e reparação de máquinas e equipamentos para uso geral não especificados anteriormente",
-				"Anexo": "III",
-				"FatorR": "N",
-				"Aliquota": 6.00
-			},
-			{
-				"Id": 927,
-				"CodigoCNAE": "3314701",
-				"Descricao": "Manutenção e reparação de máquinas motrizes não-elétricas",
-				"Anexo": "III",
-				"FatorR": "N",
-				"Aliquota": 6.00
-			},
-			{
-				"Id": 929,
-				"CodigoCNAE": "3314706",
-				"Descricao": "Manutenção e reparação de máquinas, aparelhos e equipamentos para instalações térmicas",
-				"Anexo": "III",
-				"FatorR": "N",
-				"Aliquota": 6.00
-			},
-			{
-				"Id": 930,
-				"CodigoCNAE": "3313999",
-				"Descricao": "Manutenção e reparação de máquinas, aparelhos e materiais elétricos não especificados anteriormente",
-				"Anexo": "III",
-				"FatorR": "N",
-				"Aliquota": 6.00
-			},
-			{
-				"Id": 931,
-				"CodigoCNAE": "3314708",
-				"Descricao": "Manutenção e reparação de máquinas, equipamentos e aparelhos para transporte e elevação de cargas",
-				"Anexo": "III",
-				"FatorR": "N",
-				"Aliquota": 6.00
-			},
-			{
-				"Id": 1078,
-				"CodigoCNAE": "9529105",
-				"Descricao": "Reparação de artigos do mobiliário",
-				"Anexo": "III",
-				"FatorR": "N",
-				"Aliquota": 6.00
-			},
-			{
-				"Id": 1085,
-				"CodigoCNAE": "9521500",
-				"Descricao": "Reparação e manutenção de equipamentos eletroeletrônicos de uso pessoal e doméstico",
-				"Anexo": "III",
-				"FatorR": "N",
-				"Aliquota": 6.00
-			},
-			{
-				"Id": 1086,
-				"CodigoCNAE": "9529199",
-				"Descricao": "Reparação e manutenção de outros objetos e equipamentos pessoais e domésticos não especificados anteriormente",
-				"Anexo": "III",
-				"FatorR": "N",
-				"Aliquota": 6.00
-			}
-		],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 5,
-			"Codigo": "05",
-			"Descricao": "MANUTENÇÃO"
-		},
-		"Ativo": true,
-		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
+		
 		"Id": 86,
 		"Codigo": "05.01.04",
 		"Descricao": "MANUTENÇÃO DE INFORMATICA",
-		"DescricaoDetalhada": "<p>OK</p>",
-		"DataAtivacao": "2023-01-01T00:00:00",
-		"DataDesativacao": null,
-		"JustificativaDesativacao": "",
-		"CategoriaId": 5,
-		"ContaSintetica": false,
-		"Cnaes": [
-			{
-				"Id": 1016,
-				"CodigoCNAE": "6319400",
-				"Descricao": "Portais, provedores de conteúdo e outros serviços de informação na internet",
-				"Anexo": "V",
-				"FatorR": "S",
-				"Aliquota": 15.50
-			},
-			{
-				"Id": 1083,
-				"CodigoCNAE": "9511800",
-				"Descricao": "Reparação e manutenção de computadores e de equipamentos periféricos",
-				"Anexo": "III",
-				"FatorR": "N",
-				"Aliquota": 6.00
-			},
-			{
-				"Id": 1084,
-				"CodigoCNAE": "9512600",
-				"Descricao": "Reparação e manutenção de equipamentos de comunicação",
-				"Anexo": "III",
-				"FatorR": "N",
-				"Aliquota": 6.00
-			},
-			{
-				"Id": 1202,
-				"CodigoCNAE": "6209100",
-				"Descricao": "Suporte técnico, manutenção e outros serviços em tecnologia da informação",
-				"Anexo": "III",
-				"FatorR": "S",
-				"Aliquota": 6.00
-			},
-			{
-				"Id": 1242,
-				"CodigoCNAE": "6311900",
-				"Descricao": "Tratamento de dados, provedores de serviços de aplicação e serviços de hospedagem na internet",
-				"Anexo": "V",
-				"FatorR": "S",
-				"Aliquota": 15.50
-			}
-		],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 5,
-			"Codigo": "05",
-			"Descricao": "MANUTENÇÃO"
-		},
-		"Ativo": true,
-		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
+		
 		"Id": 83,
 		"Codigo": "05.01.01",
 		"Descricao": "MANUTENÇÃO PREDIAL E ADEQUAÇÕES",
@@ -6240,7 +4349,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 5,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 41,
@@ -6549,9 +4658,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Altera&ccedil;&atilde;o conforme novo plano de contas.</p>",
 		"CategoriaId": 2,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 2,
 			"Codigo": "02",
@@ -6577,9 +4684,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 2,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 2,
 			"Codigo": "02",
@@ -6605,9 +4710,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 2,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 2,
 			"Codigo": "02",
@@ -6633,9 +4736,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 2,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 2,
 			"Codigo": "02",
@@ -6661,9 +4762,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 3,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 3,
 			"Codigo": "03",
@@ -6680,72 +4779,7 @@
 		"HoraExtra": false,
 		"RateioNegativo": false
 	},
-	{
-		"Id": 157,
-		"Codigo": "02.04.06",
-		"Descricao": "MATERIAL DE EPI - EQUIPAMENTOS DE SEGURANÇA",
-		"DescricaoDetalhada": "<p>OK</p>",
-		"DataAtivacao": "2023-01-01T00:00:00",
-		"DataDesativacao": "2024-12-31T00:00:00",
-		"JustificativaDesativacao": "<p>Altera&ccedil;&atilde;o conforme novo plano de contas.&nbsp;</p>",
-		"CategoriaId": 2,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 2,
-			"Codigo": "02",
-			"Descricao": "MATERIAL DE CONSUMO"
-		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
-		"Id": 47,
-		"Codigo": "02.03.02",
-		"Descricao": "MATERIAL DE ESCRITORIO",
-		"DescricaoDetalhada": "<p>ok</p>",
-		"DataAtivacao": "2023-01-01T00:00:00",
-		"DataDesativacao": "2024-12-31T00:00:00",
-		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
-		"CategoriaId": 2,
-		"ContaSintetica": false,
-		"Cnaes": [
-			{
-				"Id": 181,
-				"CodigoCNAE": "4647801",
-				"Descricao": "Comércio atacadista de artigos de escritório e de papelaria",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			}
-		],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 2,
-			"Codigo": "02",
-			"Descricao": "MATERIAL DE CONSUMO"
-		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
+	
 		"Id": 228,
 		"Codigo": "02.01.02",
 		"Descricao": "MATERIAL DE ESCRITORIO",
@@ -6754,9 +4788,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 2,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 2,
 			"Codigo": "02",
@@ -6782,9 +4813,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 2,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 2,
 			"Codigo": "02",
@@ -6810,9 +4839,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 2,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 2,
 			"Codigo": "02",
@@ -6838,9 +4865,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 2,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 2,
 			"Codigo": "02",
@@ -6866,7 +4890,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Altera&ccedil;&atilde;o conforme novo de plano de contas</p>",
 		"CategoriaId": 2,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 255,
@@ -6915,186 +4939,16 @@
 			"Codigo": "02",
 			"Descricao": "MATERIAL DE CONSUMO"
 		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
 	},
 	{
 		"Id": 236,
 		"Codigo": "02.02.06",
 		"Descricao": "MATERIAL DE MANUTENÇÃO",
-		"DescricaoDetalhada": "<p>Novo Plano de Contas. Ok</p>",
-		"DataAtivacao": "2025-01-01T00:00:00",
-		"DataDesativacao": null,
-		"JustificativaDesativacao": "",
-		"CategoriaId": 2,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 2,
-			"Codigo": "02",
-			"Descricao": "MATERIAL DE CONSUMO"
-		},
-		"Ativo": true,
-		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
+		
 		"Id": 241,
 		"Codigo": "03.01.03",
 		"Descricao": "MATERIAL DE MANUTENÇÃO ASSISTENCIAL",
-		"DescricaoDetalhada": "<p>Novo Plano de Contas. Ok</p>",
-		"DataAtivacao": "2025-01-01T00:00:00",
-		"DataDesativacao": null,
-		"JustificativaDesativacao": "",
-		"CategoriaId": 3,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 3,
-			"Codigo": "03",
-			"Descricao": "MATERIAL DE CONSUMO ASSISTENCIAL"
-		},
-		"Ativo": true,
-		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
-		"Id": 158,
-		"Codigo": "02.04.07",
-		"Descricao": "MATERIAL DE MANUTENÇÃO EQUIPAMENTO ASSISTENCIAL",
-		"DescricaoDetalhada": "<p>ok</p>",
-		"DataAtivacao": "2023-01-01T00:00:00",
-		"DataDesativacao": "2024-12-31T00:00:00",
-		"JustificativaDesativacao": "<p>Altera&ccedil;&atilde;o conforme novo plano de contas.</p>",
-		"CategoriaId": 2,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 2,
-			"Codigo": "02",
-			"Descricao": "MATERIAL DE CONSUMO"
-		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
-		"Id": 159,
-		"Codigo": "02.04.08",
-		"Descricao": "MATERIAL DE MANUTENÇÃO EQUIPMENTO ADMINISTRATIVO",
-		"DescricaoDetalhada": "<p>ok</p>",
-		"DataAtivacao": "2023-01-01T00:00:00",
-		"DataDesativacao": "2024-12-31T00:00:00",
-		"JustificativaDesativacao": "<p>Altera&ccedil;&atilde;o conforme novo plano de contas.</p>",
-		"CategoriaId": 2,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 2,
-			"Codigo": "02",
-			"Descricao": "MATERIAL DE CONSUMO"
-		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
-		"Id": 160,
-		"Codigo": "02.04.09",
-		"Descricao": "MATERIAL DE MANUTENÇÃO PREDIAL",
-		"DescricaoDetalhada": "<p>ok</p>",
-		"DataAtivacao": "2023-01-01T00:00:00",
-		"DataDesativacao": "2024-12-31T00:00:00",
-		"JustificativaDesativacao": "<p>Altera&ccedil;&atilde;o conforme novo plano de contas.</p>",
-		"CategoriaId": 2,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 2,
-			"Codigo": "02",
-			"Descricao": "MATERIAL DE CONSUMO"
-		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
-		"Id": 56,
-		"Codigo": "03.01",
-		"Descricao": "MATERIAL MEDICO/MEDICAMENTO",
-		"DescricaoDetalhada": "<p>OK</p>",
-		"DataAtivacao": "2023-01-01T00:00:00",
-		"DataDesativacao": null,
-		"JustificativaDesativacao": "",
-		"CategoriaId": 3,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 3,
-			"Codigo": "03",
-			"Descricao": "MATERIAL DE CONSUMO ASSISTENCIAL"
-		},
-		"Ativo": true,
-		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": false,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
+		
 		"Id": 242,
 		"Codigo": "03.01.04",
 		"Descricao": "MATERIAL ODONTOLÓGICO",
@@ -7103,9 +4957,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 3,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 3,
 			"Codigo": "03",
@@ -7131,7 +4982,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 2,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 258,
@@ -7148,16 +4999,6 @@
 			"Codigo": "02",
 			"Descricao": "MATERIAL DE CONSUMO"
 		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
 	},
 	{
 		"Id": 224,
@@ -7168,9 +5009,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -7196,9 +5034,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 8,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 8,
 			"Codigo": "08",
@@ -7224,9 +5059,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 3,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 3,
 			"Codigo": "03",
@@ -7252,9 +5084,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 6,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 6,
 			"Codigo": "06",
@@ -7280,9 +5109,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 5,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 5,
 			"Codigo": "05",
@@ -7308,9 +5134,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 9,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 9,
 			"Codigo": "09",
@@ -7336,9 +5159,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 7,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 7,
 			"Codigo": "07",
@@ -7364,9 +5184,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -7392,9 +5209,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 2,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 2,
 			"Codigo": "02",
@@ -7420,9 +5234,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 4,
 			"Codigo": "04",
@@ -7448,9 +5259,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 5,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 5,
 			"Codigo": "05",
@@ -7476,9 +5285,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 7,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 7,
 			"Codigo": "07",
@@ -7504,9 +5311,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 3,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 3,
 			"Codigo": "03",
@@ -7532,9 +5337,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 2,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 2,
 			"Codigo": "02",
@@ -7560,9 +5363,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 9,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 9,
 			"Codigo": "09",
@@ -7588,9 +5389,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 4,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 4,
 			"Codigo": "04",
@@ -7616,9 +5415,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 6,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 6,
 			"Codigo": "06",
@@ -7644,9 +5441,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -7672,9 +5467,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 8,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 8,
 			"Codigo": "08",
@@ -7700,9 +5493,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 6,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 6,
 			"Codigo": "06",
@@ -7765,9 +5556,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 6,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 6,
 			"Codigo": "06",
@@ -7788,236 +5577,7 @@
 		"Id": 244,
 		"Codigo": "03.01.06",
 		"Descricao": "ORTESES E PROTESES",
-		"DescricaoDetalhada": "<p>Novo Plano de Contas. Ok</p>",
-		"DataAtivacao": "2025-01-01T00:00:00",
-		"DataDesativacao": null,
-		"JustificativaDesativacao": "",
-		"CategoriaId": 3,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 3,
-			"Codigo": "03",
-			"Descricao": "MATERIAL DE CONSUMO ASSISTENCIAL"
-		},
-		"Ativo": true,
-		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
-		"Id": 43,
-		"Codigo": "02.02",
-		"Descricao": "ORTESES E PROTESES",
-		"DescricaoDetalhada": "<p>ok</p>",
-		"DataAtivacao": "2023-01-01T00:00:00",
-		"DataDesativacao": "2024-12-31T00:00:00",
-		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
-		"CategoriaId": 2,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 2,
-			"Codigo": "02",
-			"Descricao": "MATERIAL DE CONSUMO"
-		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": false,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
-		"Id": 44,
-		"Codigo": "02.02.01",
-		"Descricao": "ORTESES E PROTESES",
-		"DescricaoDetalhada": "<p>ok</p>",
-		"DataAtivacao": "2023-01-01T00:00:00",
-		"DataDesativacao": "2024-12-31T00:00:00",
-		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
-		"CategoriaId": 2,
-		"ContaSintetica": false,
-		"Cnaes": [
-			{
-				"Id": 260,
-				"CodigoCNAE": "4645102",
-				"Descricao": "Comércio atacadista de próteses e artigos de ortopedia",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			}
-		],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 2,
-			"Codigo": "02",
-			"Descricao": "MATERIAL DE CONSUMO"
-		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
-		"Id": 118,
-		"Codigo": "09.04",
-		"Descricao": "OUTRAS DESPESAS",
-		"DescricaoDetalhada": "<p>Ok.</p>",
-		"DataAtivacao": "2023-01-01T00:00:00",
-		"DataDesativacao": "2024-12-31T00:00:00",
-		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
-		"CategoriaId": 9,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 9,
-			"Codigo": "09",
-			"Descricao": "DESPESAS DIVERSAS"
-		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": false,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
-		"Id": 297,
-		"Codigo": "09.05",
-		"Descricao": "OUTRAS DESPESAS",
-		"DescricaoDetalhada": "<p>Novo Plano de Contas. Ok</p>",
-		"DataAtivacao": "2025-01-01T00:00:00",
-		"DataDesativacao": null,
-		"JustificativaDesativacao": "",
-		"CategoriaId": 9,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 9,
-			"Codigo": "09",
-			"Descricao": "DESPESAS DIVERSAS"
-		},
-		"Ativo": true,
-		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": false,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
-		"Id": 215,
-		"Codigo": "01.08",
-		"Descricao": "OUTRAS DESPESAS DE PESSOAL",
-		"DescricaoDetalhada": "<p>Novo Plano de Contas. Ok</p>",
-		"DataAtivacao": "2025-01-01T00:00:00",
-		"DataDesativacao": null,
-		"JustificativaDesativacao": "",
-		"CategoriaId": 1,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 1,
-			"Codigo": "01",
-			"Descricao": "PESSOAL E REFLEXO"
-		},
-		"Ativo": true,
-		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": true,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
-		"Id": 39,
-		"Codigo": "01.04.99",
-		"Descricao": "OUTRAS DESPESAS DE PESSOAL",
-		"DescricaoDetalhada": "<p>ok</p>",
-		"DataAtivacao": "2023-01-01T00:00:00",
-		"DataDesativacao": "2024-12-31T00:00:00",
-		"JustificativaDesativacao": "<p>Novo Plano de Contas. Ok</p>",
-		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 1,
-			"Codigo": "01",
-			"Descricao": "PESSOAL E REFLEXO"
-		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": true,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
-		"Id": 34,
-		"Codigo": "01.04",
-		"Descricao": "OUTRAS DESPESAS DE PESSOAL",
-		"DescricaoDetalhada": "<p>ok</p>",
-		"DataAtivacao": "2023-01-01T00:00:00",
-		"DataDesativacao": "2024-12-31T00:00:00",
-		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
-		"CategoriaId": 1,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 1,
-			"Codigo": "01",
-			"Descricao": "PESSOAL E REFLEXO"
-		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": true,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
+		
 		"Id": 222,
 		"Codigo": "01.08.99",
 		"Descricao": "OUTRAS DESPESAS DE PESSOAL",
@@ -8026,9 +5586,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -8054,9 +5611,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 9,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 9,
 			"Codigo": "09",
@@ -8082,7 +5636,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Altera&ccedil;&atilde;o conforme novo plano de contas.</p>",
 		"CategoriaId": 9,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 3,
@@ -8099,16 +5653,6 @@
 			"Codigo": "09",
 			"Descricao": "DESPESAS DIVERSAS"
 		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
 	},
 	{
 		"Id": 19,
@@ -8119,9 +5663,6 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Altera&ccedil;&atilde;o conforme novo plano de contas</p>",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -8147,9 +5688,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -8175,9 +5713,6 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa ser&aacute; ativo at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -8203,9 +5738,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -8231,9 +5763,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -8259,9 +5788,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -8282,75 +5808,7 @@
 		"Id": 237,
 		"Codigo": "02.02.99",
 		"Descricao": "OUTROS MATERIAIS DE CONSUMO",
-		"DescricaoDetalhada": "<p>Novo Plano de Contas. Ok</p>",
-		"DataAtivacao": "2025-01-01T00:00:00",
-		"DataDesativacao": null,
-		"JustificativaDesativacao": "",
-		"CategoriaId": 2,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 2,
-			"Codigo": "02",
-			"Descricao": "MATERIAL DE CONSUMO"
-		},
-		"Ativo": true,
-		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": true,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
-		"Id": 55,
-		"Codigo": "02.04.99",
-		"Descricao": "OUTROS MATERIAIS DE CONSUMO",
-		"DescricaoDetalhada": "<p>Ok.</p>",
-		"DataAtivacao": "2023-01-01T00:00:00",
-		"DataDesativacao": "2024-12-31T00:00:00",
-		"JustificativaDesativacao": "<p>Altera&ccedil;&atilde;o conforme novo plano de contas.</p>",
-		"CategoriaId": 2,
-		"ContaSintetica": false,
-		"Cnaes": [
-			{
-				"Id": 308,
-				"CodigoCNAE": "4763601",
-				"Descricao": "Comércio varejista de brinquedos e artigos recreativos",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 340,
-				"CodigoCNAE": "4789099",
-				"Descricao": "Comércio varejista de outros produtos não especificados anteriormente",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			}
-		],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 2,
-			"Codigo": "02",
-			"Descricao": "MATERIAL DE CONSUMO"
-		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
+
 	{
 		"Id": 246,
 		"Codigo": "03.01.99",
@@ -8360,9 +5818,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 3,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 3,
 			"Codigo": "03",
@@ -8388,24 +5843,11 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Altera&ccedil;&atilde;o conforme novo plano de contas.</p>",
 		"CategoriaId": 2,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 2,
 			"Codigo": "02",
 			"Descricao": "MATERIAL DE CONSUMO"
 		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
 	},
 	{
 		"Id": 230,
@@ -8416,9 +5858,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 2,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 2,
 			"Codigo": "02",
@@ -8444,9 +5883,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -8472,9 +5908,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 6,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 6,
 			"Codigo": "06",
@@ -8500,9 +5933,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 4,
 			"Codigo": "04",
@@ -8528,9 +5958,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 10,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 10,
 			"Codigo": "10",
@@ -8556,9 +5983,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 10,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 10,
 			"Codigo": "10",
@@ -8584,9 +6008,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -8612,24 +6033,11 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
 			"Descricao": "PESSOAL E REFLEXO"
 		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
 	},
 	{
 		"Id": 171,
@@ -8640,9 +6048,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -8668,9 +6074,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -8696,24 +6099,11 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
 			"Descricao": "PESSOAL E REFLEXO"
 		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
 	},
 	{
 		"Id": 89,
@@ -8724,9 +6114,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 5,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 5,
 			"Codigo": "05",
@@ -8752,9 +6139,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 4,
 			"Codigo": "04",
@@ -8780,163 +6164,29 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 4,
 			"Codigo": "04",
 			"Descricao": "SERVIÇOS DE TERCEIROS"
 		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
 	},
 	{
 		"Id": 146,
 		"Codigo": "08.02.02",
 		"Descricao": "PIS/COFINS/CSLL SOBRE LOCAÇÃO",
-		"DescricaoDetalhada": "<p>Ok</p>",
-		"DataAtivacao": "2023-01-01T00:00:00",
-		"DataDesativacao": "2024-12-31T00:00:00",
-		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
-		"CategoriaId": 8,
-		"ContaSintetica": false,
-		"Cnaes": [
-			{
-				"Id": 3,
-				"CodigoCNAE": "1012101",
-				"Descricao": "Abate de aves",
-				"Anexo": "II",
-				"FatorR": "N",
-				"Aliquota": 4.50
-			}
-		],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 8,
-			"Codigo": "08",
-			"Descricao": "LOCAÇÃO"
-		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
+
 		"Id": 152,
 		"Codigo": "09.04.04",
 		"Descricao": "PROCESSOS JUDICIAIS",
-		"DescricaoDetalhada": "",
-		"DataAtivacao": "2023-01-01T00:00:00",
-		"DataDesativacao": null,
-		"JustificativaDesativacao": "",
-		"CategoriaId": 9,
-		"ContaSintetica": false,
-		"Cnaes": [
-			{
-				"Id": 3,
-				"CodigoCNAE": "1012101",
-				"Descricao": "Abate de aves",
-				"Anexo": "II",
-				"FatorR": "N",
-				"Aliquota": 4.50
-			}
-		],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 9,
-			"Codigo": "09",
-			"Descricao": "DESPESAS DIVERSAS"
-		},
-		"Ativo": true,
-		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
+		
 		"Id": 221,
 		"Codigo": "01.08.06",
 		"Descricao": "PROCESSOS TRABALHISTAS",
-		"DescricaoDetalhada": "<p>Novo Plano de Contas. Ok</p>",
-		"DataAtivacao": "2025-01-01T00:00:00",
-		"DataDesativacao": null,
-		"JustificativaDesativacao": "",
-		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 1,
-			"Codigo": "01",
-			"Descricao": "PESSOAL E REFLEXO"
-		},
-		"Ativo": true,
-		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
+		
 		"Id": 58,
 		"Codigo": "03.01.02",
 		"Descricao": "PRODUTOS MÉDICOS E ENFERMAGEM DIVERSOS",
-		"DescricaoDetalhada": "",
-		"DataAtivacao": "2023-01-01T00:00:00",
-		"DataDesativacao": null,
-		"JustificativaDesativacao": "",
-		"CategoriaId": 3,
-		"ContaSintetica": false,
-		"Cnaes": [
-			{
-				"Id": 221,
-				"CodigoCNAE": "4645101",
-				"Descricao": "Comércio atacadista de instrumentos e materiais para uso médico, cirúrgico, hospitalar e de laboratórios",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 297,
-				"CodigoCNAE": "4774100",
-				"Descricao": "Comércio varejista de artigos de óptica",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 305,
-				"CodigoCNAE": "4773300",
-				"Descricao": "Comércio varejista de artigos médicos e ortopédicos",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			}
-		],
+		
 		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 3,
@@ -8963,7 +6213,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 6,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 368,
@@ -9048,9 +6298,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 6,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 6,
 			"Codigo": "06",
@@ -9076,9 +6323,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 9,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 9,
 			"Codigo": "09",
@@ -9104,7 +6348,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 6,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 41,
@@ -9269,7 +6513,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 6,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 3,
@@ -9306,9 +6550,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -9334,9 +6576,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -9362,9 +6602,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -9390,24 +6628,11 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
 			"Descricao": "PESSOAL E REFLEXO"
 		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
 	},
 	{
 		"Id": 217,
@@ -9418,9 +6643,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -9446,9 +6668,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -9474,24 +6693,11 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
 			"Descricao": "PESSOAL E REFLEXO"
 		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
 	},
 	{
 		"Id": 36,
@@ -9502,7 +6708,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 1430,
@@ -9519,16 +6725,6 @@
 			"Codigo": "01",
 			"Descricao": "PESSOAL E REFLEXO"
 		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
 	},
 	{
 		"Id": 218,
@@ -9539,9 +6735,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -9567,24 +6760,11 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
 			"Descricao": "PESSOAL E REFLEXO"
 		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
 	},
 	{
 		"Id": 219,
@@ -9595,9 +6775,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -9623,9 +6800,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -9651,7 +6825,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 9,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 3,
@@ -9668,16 +6842,6 @@
 			"Codigo": "09",
 			"Descricao": "DESPESAS DIVERSAS"
 		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
 	},
 	{
 		"Id": 143,
@@ -9688,7 +6852,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Alterado conforme novo plano de contas</p>",
 		"CategoriaId": 7,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 3,
@@ -9725,7 +6889,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Alterado conformo novo plano de contas</p>",
 		"CategoriaId": 6,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 3,
@@ -9762,9 +6926,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 13,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 13,
 			"Codigo": "11",
@@ -9790,7 +6951,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 9,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 3,
@@ -9807,16 +6968,6 @@
 			"Codigo": "09",
 			"Descricao": "DESPESAS DIVERSAS"
 		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
 	},
 	{
 		"Id": 307,
@@ -9827,9 +6978,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 14,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 14,
 			"Codigo": "12",
@@ -9855,7 +7003,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Alterado conforme novo plano de contas.</p>",
 		"CategoriaId": 7,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 3,
@@ -9892,7 +7040,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Alterado conforme novo plano de contas.</p>",
 		"CategoriaId": 6,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 3,
@@ -9929,9 +7077,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 13,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 13,
 			"Codigo": "11",
@@ -10031,9 +7176,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 13,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 13,
 			"Codigo": "11",
@@ -10059,7 +7202,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 9,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 3,
@@ -10096,9 +7239,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -10124,9 +7264,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -10152,9 +7289,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -10180,9 +7314,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -10208,7 +7339,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 1430,
@@ -10225,16 +7356,6 @@
 			"Codigo": "01",
 			"Descricao": "PESSOAL E REFLEXO"
 		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
 	},
 	{
 		"Id": 22,
@@ -10245,24 +7366,11 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
 			"Descricao": "PESSOAL E REFLEXO"
 		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
 	},
 	{
 		"Id": 258,
@@ -10273,9 +7381,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 4,
 			"Codigo": "04",
@@ -10301,7 +7406,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 5,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 190,
@@ -10438,16 +7543,6 @@
 			"Codigo": "05",
 			"Descricao": "MANUTENÇÃO"
 		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
 	},
 	{
 		"Id": 256,
@@ -10458,9 +7553,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 4,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 4,
 			"Codigo": "04",
@@ -10486,9 +7579,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 4,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 4,
 			"Codigo": "04",
@@ -10514,7 +7605,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 44,
@@ -10607,9 +7698,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 4,
 			"Codigo": "04",
@@ -10635,24 +7723,11 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Altera&ccedil;&atilde;o conforme novo plano de contas.</p>",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 4,
 			"Codigo": "04",
 			"Descricao": "SERVIÇOS DE TERCEIROS"
 		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
 	},
 	{
 		"Id": 161,
@@ -10663,24 +7738,11 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Altera&ccedil;&atilde;o conforme novo plano de contas</p>",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 4,
 			"Codigo": "04",
 			"Descricao": "SERVIÇOS DE TERCEIROS"
 		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
 	},
 	{
 		"Id": 259,
@@ -10691,9 +7753,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 4,
 			"Codigo": "04",
@@ -10719,7 +7778,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 47,
@@ -10944,16 +8003,6 @@
 			"Codigo": "04",
 			"Descricao": "SERVIÇOS DE TERCEIROS"
 		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
 	},
 	{
 		"Id": 67,
@@ -10964,7 +8013,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 1182,
@@ -10997,16 +8046,6 @@
 			"Codigo": "04",
 			"Descricao": "SERVIÇOS DE TERCEIROS"
 		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
 	},
 	{
 		"Id": 252,
@@ -11017,9 +8056,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 4,
 			"Codigo": "04",
@@ -11045,9 +8081,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 4,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 4,
 			"Codigo": "04",
@@ -11073,9 +8107,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 4,
 			"Codigo": "04",
@@ -11101,7 +8132,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 521,
@@ -11238,16 +8269,6 @@
 			"Codigo": "04",
 			"Descricao": "SERVIÇOS DE TERCEIROS"
 		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
 	},
 	{
 		"Id": 69,
@@ -11258,7 +8279,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 224,
@@ -11283,16 +8304,6 @@
 			"Codigo": "04",
 			"Descricao": "SERVIÇOS DE TERCEIROS"
 		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
 	},
 	{
 		"Id": 254,
@@ -11303,9 +8314,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 4,
 			"Codigo": "04",
@@ -11331,7 +8339,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 478,
@@ -11392,9 +8400,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 4,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 4,
 			"Codigo": "04",
@@ -11411,72 +8417,11 @@
 		"HoraExtra": false,
 		"RateioNegativo": false
 	},
-	{
-		"Id": 66,
-		"Codigo": "04.01.08",
-		"Descricao": "SND",
-		"DescricaoDetalhada": "<p>Ok</p>",
-		"DataAtivacao": "2023-01-01T00:00:00",
-		"DataDesativacao": "2024-12-31T00:00:00",
-		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
-		"CategoriaId": 4,
-		"ContaSintetica": false,
-		"Cnaes": [
-			{
-				"Id": 846,
-				"CodigoCNAE": "5620101",
-				"Descricao": "Fornecimento de alimentos preparados preponderantemente para empresas",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			}
-		],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 4,
-			"Codigo": "04",
-			"Descricao": "SERVIÇOS DE TERCEIROS"
-		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
+	
 		"Id": 251,
 		"Codigo": "04.01.07",
 		"Descricao": "SND",
-		"DescricaoDetalhada": "<p>Novo Plano de Contas. Ok</p>",
-		"DataAtivacao": "2025-01-01T00:00:00",
-		"DataDesativacao": null,
-		"JustificativaDesativacao": "",
-		"CategoriaId": 4,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 4,
-			"Codigo": "04",
-			"Descricao": "SERVIÇOS DE TERCEIROS"
-		},
-		"Ativo": true,
-		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
+		
 		"Id": 46,
 		"Codigo": "02.03.01",
 		"Descricao": "SUPRIMENTO DE INFORMÁTICA",
@@ -11485,7 +8430,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 2,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 271,
@@ -11518,16 +8463,6 @@
 			"Codigo": "02",
 			"Descricao": "MATERIAL DE CONSUMO"
 		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
 	},
 	{
 		"Id": 227,
@@ -11538,9 +8473,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 2,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 2,
 			"Codigo": "02",
@@ -11566,9 +8498,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 9,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 9,
 			"Codigo": "09",
@@ -11594,7 +8524,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 9,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 161,
@@ -11671,7 +8601,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 9,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 1066,
@@ -11772,9 +8702,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 9,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 9,
 			"Codigo": "09",
@@ -11800,7 +8727,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 8,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 384,
@@ -11853,9 +8780,6 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 6,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 6,
 			"Codigo": "06",
@@ -11881,7 +8805,7 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Altera&ccedil;&atilde;o conforme novo planos de contas.</p>",
 		"CategoriaId": 6,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 3,
@@ -11918,9 +8842,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 7,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 7,
 			"Codigo": "07",
@@ -11946,9 +8867,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 5,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 5,
 			"Codigo": "05",
@@ -11974,9 +8892,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 2,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 2,
 			"Codigo": "02",
@@ -12002,9 +8917,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 3,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 3,
 			"Codigo": "03",
@@ -12030,9 +8942,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 6,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 6,
 			"Codigo": "06",
@@ -12058,9 +8967,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 4,
 			"Codigo": "04",
@@ -12081,116 +8987,7 @@
 		"Id": 234,
 		"Codigo": "02.02.04",
 		"Descricao": "UNIFORMES E ROUPARIA HOSPITALAR",
-		"DescricaoDetalhada": "<p>Novo Plano de Contas. Ok</p>",
-		"DataAtivacao": "2025-01-01T00:00:00",
-		"DataDesativacao": null,
-		"JustificativaDesativacao": "",
-		"CategoriaId": 2,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 2,
-			"Codigo": "02",
-			"Descricao": "MATERIAL DE CONSUMO"
-		},
-		"Ativo": true,
-		"Status": "Ativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
-		"Id": 52,
-		"Codigo": "02.04.03",
-		"Descricao": "UNIFORMES E ROUPARIA HOSPITALAR",
-		"DescricaoDetalhada": "<p>Ok</p>",
-		"DataAtivacao": "2023-01-01T00:00:00",
-		"DataDesativacao": "2024-12-31T00:00:00",
-		"JustificativaDesativacao": "<p>Altera&ccedil;&atilde;o conforme novo plano de contas.</p>",
-		"CategoriaId": 2,
-		"ContaSintetica": false,
-		"Cnaes": [
-			{
-				"Id": 180,
-				"CodigoCNAE": "4641902",
-				"Descricao": "Comércio atacadista de artigos de cama, mesa e banho",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 194,
-				"CodigoCNAE": "4643501",
-				"Descricao": "Comércio atacadista de calçados",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 265,
-				"CodigoCNAE": "4642702",
-				"Descricao": "Comércio atacadista de roupas e acessórios para uso profissional e de segurança do trabalho",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 293,
-				"CodigoCNAE": "4755503",
-				"Descricao": "Comércio varejista de artigos de cama, mesa e banho",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 302,
-				"CodigoCNAE": "4781400",
-				"Descricao": "Comércio varejista de artigos do vestuário e acessórios",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 310,
-				"CodigoCNAE": "4782201",
-				"Descricao": "Comércio varejista de calçados",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			},
-			{
-				"Id": 349,
-				"CodigoCNAE": "4755501",
-				"Descricao": "Comércio varejista de tecidos",
-				"Anexo": "I",
-				"FatorR": "N",
-				"Aliquota": 4.00
-			}
-		],
-		"TipoDeDespesaCnaes": [],
-		"Categoria": {
-			"Id": 2,
-			"Codigo": "02",
-			"Descricao": "MATERIAL DE CONSUMO"
-		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
-	},
-	{
+		
 		"Id": 106,
 		"Codigo": "09.01",
 		"Descricao": "UTILIDADE PÚBLICA",
@@ -12199,9 +8996,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 9,
-		"ContaSintetica": true,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
+		"ContaSintetica": tr
 		"Categoria": {
 			"Id": 9,
 			"Codigo": "09",
@@ -12227,24 +9022,11 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativo apenas at&eacute; o dia 31/12/2024</p>",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
 			"Descricao": "PESSOAL E REFLEXO"
 		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
 	},
 	{
 		"Id": 213,
@@ -12255,9 +9037,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -12283,9 +9062,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -12311,24 +9087,11 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
 			"Descricao": "PESSOAL E REFLEXO"
 		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
 	},
 	{
 		"Id": 14,
@@ -12339,24 +9102,11 @@
 		"DataDesativacao": "2024-12-31T00:00:00",
 		"JustificativaDesativacao": "<p>Conforme novo plano de contas, tipo de despesa estar&aacute; ativa at&eacute; a data 31/12/2024</p>",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
 			"Descricao": "PESSOAL E REFLEXO"
 		},
-		"Ativo": false,
-		"Status": "Inativo",
-		"EquipamentosMobiliarios": false,
-		"FornecedoresRPA": false,
-		"EquipeDimensionada": false,
-		"Custeio": true,
-		"ConstrucaoReforma": false,
-		"ObservacaoObrigatoria": false,
-		"HoraExtra": false,
-		"RateioNegativo": false
 	},
 	{
 		"Id": 209,
@@ -12367,9 +9117,6 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 1,
-		"ContaSintetica": false,
-		"Cnaes": [],
-		"TipoDeDespesaCnaes": [],
 		"Categoria": {
 			"Id": 1,
 			"Codigo": "01",
@@ -12395,7 +9142,7 @@
 		"DataDesativacao": null,
 		"JustificativaDesativacao": "",
 		"CategoriaId": 4,
-		"ContaSintetica": false,
+		
 		"Cnaes": [
 			{
 				"Id": 99,

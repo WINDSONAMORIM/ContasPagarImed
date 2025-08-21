@@ -140,7 +140,7 @@ export interface PayRollDTO {
 }
 
 interface PayRollUnitDTO {
-  Id: number;
+  // Id: number;
   UnidadeId: number;
   LinhaServicoId: number;
   AreaAtuacaoId: number;

@@ -28,10 +28,11 @@ export class PayRollController {
         data: data,
       });
     } catch (error: any) {
+      console.log("ERROR Controller: " ,error)
       res.status(500).json({
         success: false,
-        message: "Unexpected error while creating payroll entry.",
-        data: null,
+        message: error.message,
+        data: error,
       });
     }
   }

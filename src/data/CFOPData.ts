@@ -12,4 +12,14 @@ export const CFOPDatas: CFOP[] = [
     descricao:
       "Devolução de venda de mercadoria adquirida ou recebida de terceiros",
   },
+  {
+    codigo: '1909',
+    descricao:
+      "Retorno de bem remetido por conta de contrato de comodato",
+  },
+   {
+    codigo: '5908',
+    descricao:
+      "Remessa de bem por conta de contrato de comodato",
+  },
 ]; 

@@ -51,16 +51,34 @@ export const xlsxParseJsonPayRoll = async (file: Express.Multer.File): Promise<P
       raw: false,
     });
 
-    const headers = jsonData[0].map((h) => h.trim());
+    const headersOrigin = jsonData[0].map((h) => h.trim());
+
+    const headers = (header: string): string => {
+      return header
+        .normalize("NFD")                 // separa letra do acento
+        .replace(/[\u0300-\u036f]/g, "")  // remove acentos
+        .replace(/[^a-zA-Z0-9 ]/g, " ")   // troca especiais por espaço
+        .trim()
+        .split(/\s+/)                     // divide por espaço
+        .map((word, index) =>
+          index === 0
+            ? word.toLowerCase()          // primeira em minúsculo
+            : word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+        )
+        .join("");
+    };
+
     const dataRows = jsonData.slice(1);
-    console.log("XLXS Parse Json - Headers Payroll Data:", headers);
     
-    const jsonDataFormatted: PayRollDTO[] = 
-      dataRows.map((row) => mapperPayRoll(row)
-    ); 
-
-    // console.log("XLXS Parse Json - Formatted Payroll Data:", jsonDataFormatted);
-
+    const jsonDataFormatted: PayRollDTO[] = dataRows.map((row) => { 
+      const rowObj: Record<string,any> = {};
+      headersOrigin.forEach((header, i) => {
+        const cleanHeader = headers(header)
+        rowObj[cleanHeader] = row[i]
+      });
+      return mapperPayRoll(rowObj)
+    })
+    
     return jsonDataFormatted;
   } catch (error) {
     console.error("Error parsing XLSX file:", error);

@@ -65,6 +65,7 @@ export class MaxTypeByValor {
         maxTipo = Number(tipoStr);
       }
     }
+    console.log("maxTipo: ", maxTipo)
     return {
       Id: 0,
       UnidadeId: 1,
