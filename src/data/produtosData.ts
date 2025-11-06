@@ -12,7 +12,7 @@ export interface Produtos {
 
 export const itensNota: Produtos[] = [
     {
-        cnpj: "302007000168",
+        cnpj: "00302007000168",
         razao: "INOVACAO SERVICOS E COMERCIO DE PRODUTOS HOSPITALARES LTDA",
         itens: [
             {
@@ -23,7 +23,7 @@ export const itensNota: Produtos[] = [
         ]
     },
     {
-        cnpj: "331788001190",
+        cnpj: "00331788001190",
         razao: "AIR LIQUIDE BRASIL LTDA",
         itens: [
             {
@@ -34,7 +34,7 @@ export const itensNota: Produtos[] = [
         ]
     },
     {
-        cnpj: "331788002324",
+        cnpj: "00331788002324",
         razao: "AIR LIQUIDE BRASIL LTDA",
         itens: [
             {
@@ -106,7 +106,7 @@ export const itensNota: Produtos[] = [
         ]
     },
     {
-        cnpj: "4192876000138",
+        cnpj: "04192876000138",
         razao: "CRISMED COMERCIAL HOSPITALAR LTDA",
         itens: [
             {
@@ -207,7 +207,7 @@ export const itensNota: Produtos[] = [
         ]
     },
     {
-        cnpj: "4274988000138",
+        cnpj: "04274988000138",
         razao: "ATIVA COMERCIAL HOSPITALAR LTDA",
         itens: [
             {
@@ -493,7 +493,7 @@ export const itensNota: Produtos[] = [
         ]
     },
     {
-        cnpj: "5207715000133",
+        cnpj: "05207715000133",
         razao: "PLÁTANUS FARMÁCIA DE MANIPULAÇÃO LTDA - EPP",
         itens: [
             {
@@ -675,7 +675,7 @@ export const itensNota: Produtos[] = [
         ]
     },
     {
-        cnpj: "5847630000110",
+        cnpj: "05847630000110",
         razao: "SOMASP PRODUTOS HOSPITALARES LTDA",
         itens: [
             {
@@ -981,7 +981,7 @@ export const itensNota: Produtos[] = [
         ]
     },
     {
-        cnpj: "6065614000138",
+        cnpj: "06065614000138",
         razao: "SUPERMEDICA DISTRIB HOSPITALAR LTDA",
         itens: [
             {
@@ -1057,7 +1057,7 @@ export const itensNota: Produtos[] = [
         ]
     },
     {
-        cnpj: "6135469000114",
+        cnpj: "06135469000114",
         razao: "DATRIX INDUSTRIA E COMERCIO DE PRODUTOS HOSPITALARES LTDA",
         itens: [
             {
@@ -1093,7 +1093,7 @@ export const itensNota: Produtos[] = [
         ]
     },
     {
-        cnpj: "8231734000193",
+        cnpj: "08231734000193",
         razao: "FUTURA COM.DE PROD.MEDICOS HOSP.LTDA",
         itens: [
             {
@@ -1274,7 +1274,7 @@ export const itensNota: Produtos[] = [
         ]
     },
     {
-        cnpj: "8651657000120",
+        cnpj: "08651657000120",
         razao: "ALL SOLUTIONS MEDICAL PROD. MEDICOS HOSP. LTDA.",
         itens: [
             {
@@ -1290,7 +1290,7 @@ export const itensNota: Produtos[] = [
         ]
     },
     {
-        cnpj: "8774906000175",
+        cnpj: "08774906000175",
         razao: "HOSPDROGAS COMERCIAL LTDA  EPP",
         itens: [
             {
@@ -1301,7 +1301,7 @@ export const itensNota: Produtos[] = [
         ]
     },
     {
-        cnpj: "9034672000192",
+        cnpj: "09034672000192",
         razao: "MAEVE PRODUTOS HOSPITALARES LTDA",
         itens: [
             {
@@ -1397,7 +1397,7 @@ export const itensNota: Produtos[] = [
         ]
     },
     {
-        cnpj: "9053134000145",
+        cnpj: "09053134000145",
         razao: "ELFA MEDICAMENTOS SA",
         itens: [
             {
@@ -1408,7 +1408,7 @@ export const itensNota: Produtos[] = [
         ]
     },
     {
-        cnpj: "9395128000176",
+        cnpj: "09395128000176",
         razao: "LIVE MEDICINE COM. IMP. PROD. CIRURG. MED. HOSPIT. LTDA.",
         itens: [
             {
@@ -10969,6 +10969,116 @@ export const itensNota: Produtos[] = [
                 tipoDespesaId: 236,
                 descricao: "MODULO MACB FDNFDGAC2 MODULO DE ACIONA"
             },
+        ]
+    },{
+        cnpj: "05336395000111",
+        razao: "ALMEIDA WOLFF COMERCIAL HOSPITALAR LTDA",
+        itens: [
+             {
+    codigo: "70721",
+    tipoDespesaId: 237,
+    descricao: "TSI-41-1001  - SUPORTE PARA ESCOVAS EM ACRILICO  60L X 25A PARA PAREDE"
+  },
+  {
+    codigo: "29297",
+    tipoDespesaId: 237,
+    descricao: "6008128 - DETERGENTE NEUTRO -  TECPON GOLD - 5L"
+  },
+  {
+    codigo: "29097",
+    tipoDespesaId: 237,
+    descricao: "40500272 - DETERGENTE ENZIMÁTICO - ENZITEC 5E - GALÃO 5L"
+  },
+  {
+    codigo: "70267",
+    tipoDespesaId: 237,
+    descricao: "6016649 - TECPON PRE LIMPEZA(1L SPRAY)"
+  },
+  {
+    codigo: "71487",
+    tipoDespesaId: 237,
+    descricao: "FZV-SP-1930 - FITA ZEBRADA SISPACK AUTOCLAVE VAPOR 19X30"
+  },
+  {
+    codigo: "70497",
+    tipoDespesaId: 237,
+    descricao: "TSI-2020 - INDICADOR BIOLOGICO P/ VAPOR - 20 MINUTOS"
+  },
+  {
+    codigo: "70486",
+    tipoDespesaId: 237,
+    descricao: "TSI-B300 - BOWIE DICK PACOTE PRONTO COM FOLHA ALERTA - TECHSTERI"
+  },
+  {
+    codigo: "29240",
+    tipoDespesaId: 237,
+    descricao: "005.00606-0 - PAPEL GRAU CIRúRGICO -10X100"
+  },
+  {
+    codigo: "29235",
+    tipoDespesaId: 237,
+    descricao: "005.00608 - TUBULAR PADRAO PAPEL GRAU CIRúRGICO - 20X100"
+  },
+  {
+    codigo: "71208",
+    tipoDespesaId: 237,
+    descricao: "CS.0002 - EMBALAGEM P/ ESTERILIZACAO 40X40 SMS 50 GRS AZ"
+  },
+  {
+    codigo: "71216",
+    tipoDespesaId: 237,
+    descricao: "CS.0026 - EMBALAGEM P/ ESTERILIZACAO 50X50 SMS 60 GRS AZ"
+  },
+  {
+    codigo: "71217",
+    tipoDespesaId: 237,
+    descricao: "CS.0027 - EMBALAGEM P/ ESTERILIZACAO 60X60 SMS 60 GRS AZ"
+  },
+  {
+    codigo: "71218",
+    tipoDespesaId: 237,
+    descricao: "CS.0028 - EMBALAGEM P/ ESTERILIZACAO 75X75 SMS 60 GRS AZ"
+  },
+  {
+    codigo: "71220",
+    tipoDespesaId: 237,
+    descricao: "CS.0030 - EMBALAGEM P/ ESTERILIZACAO 100X100 SMS 60 GRS AZ"
+  },
+  {
+    codigo: "29145",
+    tipoDespesaId: 237,
+    descricao: "AP  0630 - Avental Expurgo Laminado Sel FIX5"
+  },
+  {
+    codigo: "71153",
+    tipoDespesaId: 237,
+    descricao: "L-LVG - LUVA NITRILICA SEM Pó TAMANHO G"
+  },
+  {
+    codigo: "70481",
+    tipoDespesaId: 237,
+    descricao: "TSI-7035F - ETIQUETA DUPLA CAMADA 70 X 35 MM P/ IMPRESSÂO C/ IND. QUÍM. TIPO 1"
+  },
+  {
+    codigo: "29352",
+    tipoDespesaId: 237,
+    descricao: "1035 - ROLO WIPER PRO 60 25CMX200M"
+  },
+  {
+    codigo: "70896",
+    tipoDespesaId: 237,
+    descricao: "TSI-CV-R10M - INCUBADORA RAPIDA 6 EM 1 PARA INDICADORES BIOLOGICO TSI"
+  },
+  {
+    codigo: "70600",
+    tipoDespesaId: 237,
+    descricao: "TSI-H300-2.0 - ESCOVA P/ CME RIGIDA AUTOCLAVÁVEL 30CMX2MMX25M"
+  },
+  {
+    codigo: "70451",
+    tipoDespesaId: 237,
+    descricao: "TSI-T500 - INTEGRADOR VAPOR TIPO V 121/134C. TECHSTERI"
+  }
         ]
     },
 ];

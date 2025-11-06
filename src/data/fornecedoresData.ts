@@ -40068,4 +40068,5 @@ export const fornecedores = [
   { Id: 12491, CnpjCpf: "17197385000121" },
   { Id: 43626, CnpjCpf: "46156056000130" },
   { Id: 43710, CnpjCpf: "18129745000110" },
+  { Id: 47120, CnpjCpf: "26643869000148"}
 ];
