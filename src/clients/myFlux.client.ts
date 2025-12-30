@@ -30,23 +30,51 @@ export class MyFluxClient{
         this.api.defaults.headers.common["Content-Type"] = "application/json";
     }
 
+    async getTitle(processId: Number): Promise<any>{
+        try {
+            await this.ensureToken()
+
+            this.api.defaults.headers.common = {
+                "Authorization": `Bearer ${this.token}`,
+                "Accept": "application/json",
+                };
+            
+            const {data} = await this.api.get(`/processos/${processId}`,{withCredentials:true})
+            
+            if(data){
+                console.log(`Process: ${processId} Data: ${data.titulo}  `)
+                // console.log(`Process: ${processId} Data: ${JSON.stringify(data,null,4)}  `)
+                const fullTitle = data.titulo; // "NF35899_NIHON_HMB_20251017"
+                const partes = fullTitle.split("_");
+                const tituloCurto = `${partes[0]}_${partes[1]}`;
+                return tituloCurto
+            }
+
+        } catch (error) {
+            
+        }
+    }
+
     async empacotar(processId: Number): Promise<any>{
         try {
             await this.ensureToken()
-            // this.api.defaults.headers.common["Authorization"] = `Bearer ${this.token}`
-            // this.api.defaults.headers.common["Content-Type"] = "application/json";
-            // this.api.defaults.headers.common["Origin"] = "https://imed.myflux.ai";
-            // this.api.defaults.headers.common["Referer"] = "https://imed.myflux.ai/";
             
               this.api.defaults.headers.common = {
                 "Authorization": `Bearer ${this.token}`,
                 "Accept": "application/json",
                 };
 
+            const title = await this.getTitle(processId)
             const {data} = await this.api.get(`/processos/${processId}/empacotar`,{withCredentials:true})
+            if(data){
+                console.log(`Process: ${processId} Data: ${data}  `)
+                console.log(`Process: ${processId} title: ${title}  `)
+                // console.log(`Process: ${processId} Data: ${JSON.stringify(data,null,4)}  `)
+            }
             
             const downloadsDir = path.join(os.homedir(), "Downloads");
-            const filePath = path.join(downloadsDir, `processo_${processId}.zip`);
+            const filePath = path.join(downloadsDir, `Processo - ${processId}.zip`);
+            // const filePath = path.join(downloadsDir, `${title}.zip`);
             const buffer = Buffer.from(data.processoZipPdf, "base64");
             fs.writeFileSync(filePath, buffer,)
 
@@ -55,17 +83,8 @@ export class MyFluxClient{
             if(error instanceof AxiosError){
                 if (error.response) {
                     console.error("🔍 Status:", error.response.status);
-                    console.error("🔍 Headers:", JSON.stringify(error.response.headers, null, 2));  
-                if (typeof error.response.data === "string") {
-                    console.error("🔍 Corpo (texto):", error.response.data);
-                } else if (error.response.data instanceof ArrayBuffer) {
-                    console.error("🔍 Corpo (binário):", Buffer.from(error.response.data).toString("utf8"));
-                } else {
-                    console.error("🔍 Corpo (JSON):", JSON.stringify(error.response.data, null, 2));
-                }
-                } else {
-                console.error("❌ Nenhuma resposta recebida do servidor:", error.message);
-                }
+                    console.error("🔍 Status:", error);
+                }             
             } else {
                 console.error("❌ Erro inesperado no empacotar:", error);
             }

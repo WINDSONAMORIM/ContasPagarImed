@@ -180,12 +180,19 @@ export class AccountsPayableService {
         continue;
       }
 
+      const produtosNota = nfe.Det.map((item:any) => item.prod) 
+      console.log("produtos nota:", JSON.stringify(produtosNota, null, 2));
+
       const filePath = path.join(filteredFolder, file.originalname);
       fs.writeFileSync(filePath, content);
 
-      const listFornecedor = itensNota;
+      const fornecedor = itensNota.find((f) => f.cnpj === nfe.Cnpj);
+      const produtos = fornecedor?.itens.map((p)=>p.codigo)
+      // console.log(fornecedor?.razao)
+      console.log(produtos)
 
-      const fornecedor = listFornecedor.find((f) => f.cnpj === nfe.Cnpj);
+      const filtrados = produtosNota.filter((f:any)=> !produtos?.includes(f.cProd))
+      console.log("Filtrados:", JSON.stringify(filtrados, null, 2));
 
       const rateio = new MaxTypeByValor(itensNota).calculate({
         produtos: Array.isArray(nfe.Det) ? nfe.Det : [nfe.Det],
@@ -198,7 +205,7 @@ export class AccountsPayableService {
       const message = !fornecedor
         ? `CNPJ: ${nfe.Cnpj} não cadastrado`
         : rateio.TipoDespesaId === 0
-        ? `Há itens na nota sem cadastro`
+        ? `Há itens na nota sem cadastro ${JSON.stringify(filtrados.map((c:any)=>c.cProd), null, 2)}`
         : fornecedor.cnpj;
 
       const newAccountResumePayable: ResponseAPI = {

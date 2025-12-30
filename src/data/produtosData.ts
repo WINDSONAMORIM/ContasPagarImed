@@ -1,13 +1,13 @@
 interface Itens {
-  codigo: string;
-  tipoDespesaId?: number;
-  descricao?: string;
+    codigo: string;
+    tipoDespesaId?: number;
+    descricao?: string;
 }
 
 export interface Produtos {
-  cnpj: string;
-  razao?: string;
-  itens: Itens[];
+    cnpj: string;
+    razao?: string;
+    itens: Itens[];
 }
 
 export const itensNota: Produtos[] = [
@@ -560,117 +560,6 @@ export const itensNota: Produtos[] = [
                 codigo: "7896255717717",
                 tipoDespesaId: 57,
                 descricao: "TEOLONG 100MG 30CAP#"
-            },
-        ]
-    },
-    {
-        cnpj: "5336395000111",
-        razao: "ALMEIDA WOLFF COMERCIAL HOSPITALAR LTDA",
-        itens: [
-            {
-                codigo: "70721",
-                tipoDespesaId: 237,
-                descricao: "TSI-41-1001  - SUPORTE PARA ESCOVAS EM ACRILICO  60L X 25A PARA PAREDE"
-            },
-            {
-                codigo: "29297",
-                tipoDespesaId: 237,
-                descricao: "6008128 - DETERGENTE NEUTRO -  TECPON GOLD - 5L"
-            },
-            {
-                codigo: "29097",
-                tipoDespesaId: 237,
-                descricao: "40500272 - DETERGENTE ENZIMÁTICO - ENZITEC 5E - GALÃO 5L"
-            },
-            {
-                codigo: "70267",
-                tipoDespesaId: 237,
-                descricao: "6016649 - TECPON PRE LIMPEZA(1L SPRAY)"
-            },
-            {
-                codigo: "71487",
-                tipoDespesaId: 237,
-                descricao: "FZV-SP-1930 - FITA ZEBRADA SISPACK AUTOCLAVE VAPOR 19X30"
-            },
-            {
-                codigo: "70497",
-                tipoDespesaId: 237,
-                descricao: "TSI-2020 - INDICADOR BIOLOGICO P/ VAPOR - 20 MINUTOS"
-            },
-            {
-                codigo: "70486",
-                tipoDespesaId: 237,
-                descricao: "TSI-B300 - BOWIE DICK PACOTE PRONTO COM FOLHA ALERTA - TECHSTERI"
-            },
-            {
-                codigo: "29240",
-                tipoDespesaId: 237,
-                descricao: "005.00606-0 - PAPEL GRAU CIRúRGICO -10X100"
-            },
-            {
-                codigo: "29235",
-                tipoDespesaId: 237,
-                descricao: "005.00608 - TUBULAR PADRAO PAPEL GRAU CIRÚRGICO - 20X100"
-            },
-            {
-                codigo: "71208",
-                tipoDespesaId: 237,
-                descricao: "CS.0002 - EMBALAGEM P/ ESTERILIZACAO 40X40 SMS 50 GRS AZ"
-            },
-            {
-                codigo: "71216",
-                tipoDespesaId: 237,
-                descricao: "CS.0026 - EMBALAGEM P/ ESTERILIZACAO 50X50 SMS 60 GRS AZ"
-            },
-            {
-                codigo: "71217",
-                tipoDespesaId: 237,
-                descricao: "CS.0027 - EMBALAGEM P/ ESTERILIZACAO 60X60 SMS 60 GRS AZ"
-            },
-            {
-                codigo: "71218",
-                tipoDespesaId: 237,
-                descricao: "CS.0028 - EMBALAGEM P/ ESTERILIZACAO 75X75 SMS 60 GRS AZ"
-            },
-            {
-                codigo: "71220",
-                tipoDespesaId: 237,
-                descricao: "CS.0030 - EMBALAGEM P/ ESTERILIZACAO 100X100 SMS 60 GRS AZ"
-            },
-            {
-                codigo: "29145",
-                tipoDespesaId: 237,
-                descricao: "AP  0630 - Avental Expurgo Laminado Sel FIX5"
-            },
-            {
-                codigo: "71153",
-                tipoDespesaId: 237,
-                descricao: "L-LVG - LUVA NITRILICA SEM Pó TAMANHO G"
-            },
-            {
-                codigo: "70481",
-                tipoDespesaId: 237,
-                descricao: "TSI-7035F - ETIQUETA DUPLA CAMADA 70 X 35 MM P/ IMPRESSÂO C/ IND. QUÍM. TIPO 1"
-            },
-            {
-                codigo: "29352",
-                tipoDespesaId: 237,
-                descricao: "1035 - ROLO WIPER PRO 60 25CMX200M"
-            },
-            {
-                codigo: "70896",
-                tipoDespesaId: 237,
-                descricao: "TSI-CV-R10M - INCUBADORA RAPIDA 6 EM 1 PARA INDICADORES BIOLOGICO TSI"
-            },
-            {
-                codigo: "70600",
-                tipoDespesaId: 237,
-                descricao: "TSI-H300-2.0 - ESCOVA P/ CME RIGIDA AUTOCLAVÁVEL 30CMX2MMX25M"
-            },
-            {
-                codigo: "70451",
-                tipoDespesaId: 237,
-                descricao: "TSI-T500 - INTEGRADOR VAPOR TIPO V 121/134C. TECHSTERI"
             },
         ]
     },
@@ -10970,115 +10859,266 @@ export const itensNota: Produtos[] = [
                 descricao: "MODULO MACB FDNFDGAC2 MODULO DE ACIONA"
             },
         ]
-    },{
+    }, {
         cnpj: "05336395000111",
         razao: "ALMEIDA WOLFF COMERCIAL HOSPITALAR LTDA",
         itens: [
-             {
-    codigo: "70721",
-    tipoDespesaId: 237,
-    descricao: "TSI-41-1001  - SUPORTE PARA ESCOVAS EM ACRILICO  60L X 25A PARA PAREDE"
-  },
-  {
-    codigo: "29297",
-    tipoDespesaId: 237,
-    descricao: "6008128 - DETERGENTE NEUTRO -  TECPON GOLD - 5L"
-  },
-  {
-    codigo: "29097",
-    tipoDespesaId: 237,
-    descricao: "40500272 - DETERGENTE ENZIMÁTICO - ENZITEC 5E - GALÃO 5L"
-  },
-  {
-    codigo: "70267",
-    tipoDespesaId: 237,
-    descricao: "6016649 - TECPON PRE LIMPEZA(1L SPRAY)"
-  },
-  {
-    codigo: "71487",
-    tipoDespesaId: 237,
-    descricao: "FZV-SP-1930 - FITA ZEBRADA SISPACK AUTOCLAVE VAPOR 19X30"
-  },
-  {
-    codigo: "70497",
-    tipoDespesaId: 237,
-    descricao: "TSI-2020 - INDICADOR BIOLOGICO P/ VAPOR - 20 MINUTOS"
-  },
-  {
-    codigo: "70486",
-    tipoDespesaId: 237,
-    descricao: "TSI-B300 - BOWIE DICK PACOTE PRONTO COM FOLHA ALERTA - TECHSTERI"
-  },
-  {
-    codigo: "29240",
-    tipoDespesaId: 237,
-    descricao: "005.00606-0 - PAPEL GRAU CIRúRGICO -10X100"
-  },
-  {
-    codigo: "29235",
-    tipoDespesaId: 237,
-    descricao: "005.00608 - TUBULAR PADRAO PAPEL GRAU CIRúRGICO - 20X100"
-  },
-  {
-    codigo: "71208",
-    tipoDespesaId: 237,
-    descricao: "CS.0002 - EMBALAGEM P/ ESTERILIZACAO 40X40 SMS 50 GRS AZ"
-  },
-  {
-    codigo: "71216",
-    tipoDespesaId: 237,
-    descricao: "CS.0026 - EMBALAGEM P/ ESTERILIZACAO 50X50 SMS 60 GRS AZ"
-  },
-  {
-    codigo: "71217",
-    tipoDespesaId: 237,
-    descricao: "CS.0027 - EMBALAGEM P/ ESTERILIZACAO 60X60 SMS 60 GRS AZ"
-  },
-  {
-    codigo: "71218",
-    tipoDespesaId: 237,
-    descricao: "CS.0028 - EMBALAGEM P/ ESTERILIZACAO 75X75 SMS 60 GRS AZ"
-  },
-  {
-    codigo: "71220",
-    tipoDespesaId: 237,
-    descricao: "CS.0030 - EMBALAGEM P/ ESTERILIZACAO 100X100 SMS 60 GRS AZ"
-  },
-  {
-    codigo: "29145",
-    tipoDespesaId: 237,
-    descricao: "AP  0630 - Avental Expurgo Laminado Sel FIX5"
-  },
-  {
-    codigo: "71153",
-    tipoDespesaId: 237,
-    descricao: "L-LVG - LUVA NITRILICA SEM Pó TAMANHO G"
-  },
-  {
-    codigo: "70481",
-    tipoDespesaId: 237,
-    descricao: "TSI-7035F - ETIQUETA DUPLA CAMADA 70 X 35 MM P/ IMPRESSÂO C/ IND. QUÍM. TIPO 1"
-  },
-  {
-    codigo: "29352",
-    tipoDespesaId: 237,
-    descricao: "1035 - ROLO WIPER PRO 60 25CMX200M"
-  },
-  {
-    codigo: "70896",
-    tipoDespesaId: 237,
-    descricao: "TSI-CV-R10M - INCUBADORA RAPIDA 6 EM 1 PARA INDICADORES BIOLOGICO TSI"
-  },
-  {
-    codigo: "70600",
-    tipoDespesaId: 237,
-    descricao: "TSI-H300-2.0 - ESCOVA P/ CME RIGIDA AUTOCLAVÁVEL 30CMX2MMX25M"
-  },
-  {
-    codigo: "70451",
-    tipoDespesaId: 237,
-    descricao: "TSI-T500 - INTEGRADOR VAPOR TIPO V 121/134C. TECHSTERI"
-  }
+            {
+                codigo: "70627",
+                tipoDespesaId: 237,
+                descricao: "TSI-D01 - ESCOVA PLÁSTICA COM DUPLA CERDAS EM NYLON 175X35MM"
+            },
+            {
+                codigo: "70721",
+                tipoDespesaId: 237,
+                descricao: "TSI-41-1001  - SUPORTE PARA ESCOVAS EM ACRILICO  60L X 25A PARA PAREDE"
+            },
+            {
+                codigo: "29297",
+                tipoDespesaId: 237,
+                descricao: "6008128 - DETERGENTE NEUTRO -  TECPON GOLD - 5L"
+            },
+            {
+                codigo: "29097",
+                tipoDespesaId: 237,
+                descricao: "40500272 - DETERGENTE ENZIMÁTICO - ENZITEC 5E - GALÃO 5L"
+            },
+            {
+                codigo: "70267",
+                tipoDespesaId: 237,
+                descricao: "6016649 - TECPON PRE LIMPEZA(1L SPRAY)"
+            },
+            {
+                codigo: "71487",
+                tipoDespesaId: 237,
+                descricao: "FZV-SP-1930 - FITA ZEBRADA SISPACK AUTOCLAVE VAPOR 19X30"
+            },
+            {
+                codigo: "70497",
+                tipoDespesaId: 237,
+                descricao: "TSI-2020 - INDICADOR BIOLOGICO P/ VAPOR - 20 MINUTOS"
+            },
+            {
+                codigo: "70486",
+                tipoDespesaId: 237,
+                descricao: "TSI-B300 - BOWIE DICK PACOTE PRONTO COM FOLHA ALERTA - TECHSTERI"
+            },
+            {
+                codigo: "29240",
+                tipoDespesaId: 237,
+                descricao: "005.00606-0 - PAPEL GRAU CIRúRGICO -10X100"
+            },
+            {
+                codigo: "29235",
+                tipoDespesaId: 237,
+                descricao: "005.00608 - TUBULAR PADRAO PAPEL GRAU CIRúRGICO - 20X100"
+            },
+            {
+                codigo: "71208",
+                tipoDespesaId: 237,
+                descricao: "CS.0002 - EMBALAGEM P/ ESTERILIZACAO 40X40 SMS 50 GRS AZ"
+            },
+            {
+                codigo: "71216",
+                tipoDespesaId: 237,
+                descricao: "CS.0026 - EMBALAGEM P/ ESTERILIZACAO 50X50 SMS 60 GRS AZ"
+            },
+            {
+                codigo: "71217",
+                tipoDespesaId: 237,
+                descricao: "CS.0027 - EMBALAGEM P/ ESTERILIZACAO 60X60 SMS 60 GRS AZ"
+            },
+            {
+                codigo: "71218",
+                tipoDespesaId: 237,
+                descricao: "CS.0028 - EMBALAGEM P/ ESTERILIZACAO 75X75 SMS 60 GRS AZ"
+            },
+            {
+                codigo: "71220",
+                tipoDespesaId: 237,
+                descricao: "CS.0030 - EMBALAGEM P/ ESTERILIZACAO 100X100 SMS 60 GRS AZ"
+            },
+            {
+                codigo: "29145",
+                tipoDespesaId: 237,
+                descricao: "AP  0630 - Avental Expurgo Laminado Sel FIX5"
+            },
+            {
+                codigo: "71153",
+                tipoDespesaId: 237,
+                descricao: "L-LVG - LUVA NITRILICA SEM Pó TAMANHO G"
+            },
+            {
+                codigo: "71150",
+                tipoDespesaId: 237,
+                descricao: "TSI-SW01 - TESTE SWAB ATP PARA SUPERFíCIES"
+            },
+            {
+                codigo: "70481",
+                tipoDespesaId: 237,
+                descricao: "TSI-7035F - ETIQUETA DUPLA CAMADA 70 X 35 MM P/ IMPRESSÂO C/ IND. QUÍM. TIPO 1"
+            },
+            {
+                codigo: "29352",
+                tipoDespesaId: 237,
+                descricao: "1035 - ROLO WIPER PRO 60 25CMX200M"
+            },
+            {
+                codigo: "70896",
+                tipoDespesaId: 237,
+                descricao: "TSI-CV-R10M - INCUBADORA RAPIDA 6 EM 1 PARA INDICADORES BIOLOGICO TSI"
+            },
+            {
+                codigo: "70600",
+                tipoDespesaId: 237,
+                descricao: "TSI-H300-2.0 - ESCOVA P/ CME RIGIDA AUTOCLAVÁVEL 30CMX2MMX25M"
+            },
+            {
+                codigo: "70451",
+                tipoDespesaId: 237,
+                descricao: "TSI-T500 - INTEGRADOR VAPOR TIPO V 121/134C. TECHSTERI"
+            },
+            {
+                codigo: "29241",
+                tipoDespesaId: 237,
+                descricao: "005.00611 - TUBULAR PADRAO PAPEL GRAU CIRÚRGICO -30X100"
+            }, {
+                codigo: "70721",
+                tipoDespesaId: 237,
+                descricao: "TSI-41-1001  - SUPORTE PARA ESCOVAS EM ACRILICO  60L X 25A PARA PAREDE"
+            },
+            {
+                codigo: "29297",
+                tipoDespesaId: 237,
+                descricao: "6008128 - DETERGENTE NEUTRO -  TECPON GOLD - 5L"
+            },
+            {
+                codigo: "29097",
+                tipoDespesaId: 237,
+                descricao: "40500272 - DETERGENTE ENZIMÁTICO - ENZITEC 5E - GALÃO 5L"
+            },
+            {
+                codigo: "70267",
+                tipoDespesaId: 237,
+                descricao: "6016649 - TECPON PRE LIMPEZA(1L SPRAY)"
+            },
+            {
+                codigo: "70571",
+                tipoDespesaId: 237,
+                descricao: "TSI-H02G - ESCOVA REUTIL. CABO VERDE DE 22CM CERDAS RÍGIDAS EM NYLON 78X17X15MM"
+            },
+            {
+                codigo: "71487",
+                tipoDespesaId: 237,
+                descricao: "FZV-SP-1930 - FITA ZEBRADA SISPACK AUTOCLAVE VAPOR 19X30"
+            },
+            {
+                codigo: "70497",
+                tipoDespesaId: 237,
+                descricao: "TSI-2020 - INDICADOR BIOLOGICO P/ VAPOR - 20 MINUTOS"
+            },
+            {
+                codigo: "70486",
+                tipoDespesaId: 237,
+                descricao: "TSI-B300 - BOWIE DICK PACOTE PRONTO COM FOLHA ALERTA - TECHSTERI"
+            },
+            {
+                codigo: "29239",
+                tipoDespesaId: 237,
+                descricao: "005.00607 - TUBULAR PADRAO PAPEL GRAU CIRÚRGICO -15X100"
+            },
+            {
+                codigo: "29240",
+                tipoDespesaId: 237,
+                descricao: "005.00606-0 - PAPEL GRAU CIRúRGICO -10X100"
+            },
+            {
+                codigo: "29235",
+                tipoDespesaId: 237,
+                descricao: "005.00608 - TUBULAR PADRAO PAPEL GRAU CIRÚRGICO - 20X100"
+            },
+            {
+                codigo: "71208",
+                tipoDespesaId: 237,
+                descricao: "CS.0002 - EMBALAGEM P/ ESTERILIZACAO 40X40 SMS 50 GRS AZ"
+            },
+            {
+                codigo: "71216",
+                tipoDespesaId: 237,
+                descricao: "CS.0026 - EMBALAGEM P/ ESTERILIZACAO 50X50 SMS 60 GRS AZ"
+            },
+            {
+                codigo: "71217",
+                tipoDespesaId: 237,
+                descricao: "CS.0027 - EMBALAGEM P/ ESTERILIZACAO 60X60 SMS 60 GRS AZ"
+            },
+            {
+                codigo: "71218",
+                tipoDespesaId: 237,
+                descricao: "CS.0028 - EMBALAGEM P/ ESTERILIZACAO 75X75 SMS 60 GRS AZ"
+            },
+            {
+                codigo: "71220",
+                tipoDespesaId: 237,
+                descricao: "CS.0030 - EMBALAGEM P/ ESTERILIZACAO 100X100 SMS 60 GRS AZ"
+            },
+            {
+                codigo: "71221",
+                tipoDespesaId: 237,
+                descricao: "CS.0031 - EMBALAGEM P/ ESTERILIZACAO 120X120 SMS 60 GRS AZ"
+            },
+
+            {
+                codigo: "29145",
+                tipoDespesaId: 237,
+                descricao: "AP  0630 - Avental Expurgo Laminado Sel FIX5"
+            },
+            {
+                codigo: "71153",
+                tipoDespesaId: 237,
+                descricao: "L-LVG - LUVA NITRILICA SEM Pó TAMANHO G"
+            },
+            {
+                codigo: "71156",
+                tipoDespesaId: 237,
+                descricao: "PTAUR - PROTETOR AURICULAR EM SILICONE"
+            },
+
+            {
+                codigo: "70481",
+                tipoDespesaId: 237,
+                descricao: "TSI-7035F - ETIQUETA DUPLA CAMADA 70 X 35 MM P/ IMPRESSÂO C/ IND. QUÍM. TIPO 1"
+            },
+            {
+                codigo: "29352",
+                tipoDespesaId: 237,
+                descricao: "1035 - ROLO WIPER PRO 60 25CMX200M"
+            },
+            {
+                codigo: "70896",
+                tipoDespesaId: 237,
+                descricao: "TSI-CV-R10M - INCUBADORA RAPIDA 6 EM 1 PARA INDICADORES BIOLOGICO TSI"
+            },
+            {
+                codigo: "70600",
+                tipoDespesaId: 237,
+                descricao: "TSI-H300-2.0 - ESCOVA P/ CME RIGIDA AUTOCLAVÁVEL 30CMX2MMX25M"
+            },
+            {
+                codigo: "70451",
+                tipoDespesaId: 237,
+                descricao: "TSI-T500 - INTEGRADOR VAPOR TIPO V 121/134C. TECHSTERI"
+            },
+            {
+                codigo: "70285",
+                tipoDespesaId: 237,
+                descricao: "TMV10-260 - FIBRA DE LIMPEZA MACIA - BRANCA - 100X260"
+            },
+            {
+                codigo: "70603",
+                tipoDespesaId: 237,
+                descricao: "TSI-C300-5.0 - ESCOVA P/ CME RÍGIDA AUTOCLAVÁVEL 30CMX5MMX50MM"
+            },
         ]
     },
 ];

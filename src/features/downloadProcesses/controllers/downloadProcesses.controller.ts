@@ -12,7 +12,6 @@ export class DownloadProcessesController{
 
     async downloadProcesses(data: any):Promise<ResponseAPI>{
         try {
-            console.log(`Tudo certo por aqui no Controller`)
             if(!data){
                 return {
                     statusCode: 400,
@@ -22,8 +21,6 @@ export class DownloadProcessesController{
                 }
             }
             const process = data.process
-
-            console.log("Processos recebidos:", data.process);
 
             const results = await this.downloadProcessesService.downloaderProcess(process)
 

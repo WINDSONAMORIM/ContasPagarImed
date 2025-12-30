@@ -51,4 +51,24 @@ export class SicapClient {
     //   },
     // });
   }
+
+  async createPayRollSuppliers(auth: string, data: any){
+    return axios.post(`${this.base}/FolhaPagamentoPessoaJuridica`,data,{
+      headers: {
+        Authorization: auth,
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+    })
+  }
+
+  async getCargaHorariaById(auth: string, data: number){
+    return axios.get(`${this.base}v1/CargaHoraria/${data}`,{
+      headers: {
+        Authorization: auth,
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+    })
+  }
 }

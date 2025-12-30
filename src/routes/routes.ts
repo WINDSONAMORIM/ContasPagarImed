@@ -5,6 +5,7 @@ import { filesTempRouter } from "../features/filesTemp/filesTemp.routes";
 import { payRollRoutes } from "../features/payRoll/payRoll.routes";
 import { employeeRoutes } from "../features/employee/employee.routes";
 import { downloadProcessesRoutes } from "../features/downloadProcesses/downloadProcesses.routes";
+import { payRollSuppliers } from "../features/payRollSuppliers/payRollSuppliers";
 
 export const routesApp = (app: Application) => {
   const router = express.Router();
@@ -15,6 +16,7 @@ export const routesApp = (app: Application) => {
   payRollRoutes(router);
   employeeRoutes(router);
   downloadProcessesRoutes(router);
+  payRollSuppliers(router);
 
   app.use(express.json());
   app.use("/", router);

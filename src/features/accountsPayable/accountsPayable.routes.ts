@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { AccountsPayableController } from "./controllers";
-import { uploadInMemory, validateuploadFolderExists } from "../../middlewares/validateuploadFolderExists.middleware";
+import { uploadInMemory } from "../../middlewares/validateuploadFolderExists.middleware";
 
 export const accountsPayableRoutes = (router: Router) => {
   const accountsPayableController = new AccountsPayableController();
