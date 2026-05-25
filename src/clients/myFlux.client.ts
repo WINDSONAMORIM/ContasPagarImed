@@ -3,9 +3,6 @@ import os from "os";
 import axios, { AxiosError, AxiosInstance } from "axios";
 import path from "path";
 
-import { wrapper } from "axios-cookiejar-support";
-import { CookieJar } from "tough-cookie";
-
 export class MyFluxClient{
     private api: AxiosInstance;
     private token?: string;

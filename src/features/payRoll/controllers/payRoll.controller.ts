@@ -8,6 +8,35 @@ export class PayRollController {
     this.payRollService = new PayRollService();
   }
 
+  async createPreviewPayRollController(req: Request, res: Response): Promise<void> {
+    try {
+      const file = req.file as Express.Multer.File;
+      if (!file) {
+        res.status(400).json({
+          success: false,
+          message: "No file uploaded",
+          data: null,
+        });
+        return;
+      }
+      const data = await this.payRollService.createPreviewPayRoll(file);
+      const rows = data.data;
+      console.log("DATA CONTROLLER PREVIEW: ", rows.length);
+      res.status(200).json({
+        success: true,
+        message: "Payroll preview created successfully",
+        data: data.data,
+      });
+    }
+    catch (error: any) {
+      res.status(500).json({
+        success: false,
+        message: error.message, 
+        data: null,
+      });
+    }
+  } 
+
   async createPayRollController(req: Request, res: Response): Promise<void> {
     try {
       const file = req.file as Express.Multer.File;

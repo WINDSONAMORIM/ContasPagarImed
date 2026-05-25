@@ -6,6 +6,7 @@ import { payRollRoutes } from "../features/payRoll/payRoll.routes";
 import { employeeRoutes } from "../features/employee/employee.routes";
 import { downloadProcessesRoutes } from "../features/downloadProcesses/downloadProcesses.routes";
 import { payRollSuppliers } from "../features/payRollSuppliers/payRollSuppliers";
+import { uploadDocs } from "../features/uploadDocs/uploadDocs";
 
 export const routesApp = (app: Application) => {
   const router = express.Router();
@@ -17,6 +18,7 @@ export const routesApp = (app: Application) => {
   employeeRoutes(router);
   downloadProcessesRoutes(router);
   payRollSuppliers(router);
+  uploadDocs(router);
 
   app.use(express.json());
   app.use("/", router);

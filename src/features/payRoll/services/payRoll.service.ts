@@ -6,6 +6,28 @@ import { SicapClient } from "../../../clients/sicap.client";
 
 export class PayRollService {
   private client = new SicapClient();
+
+  async createPreviewPayRoll(file: Express.Multer.File): Promise<ResponseAPI> {
+    try {
+    const parsedData = await xlsxParseJsonPayRoll(file);
+    console.log("Parsed Data Preview: ", parsedData.length);
+    return {
+      statusCode: 200,
+      success: true,
+      message: "Payroll entry created successfully",
+      data: parsedData,
+    };
+    } catch (error) {
+      console.error("Error creating payroll preview:", error);
+     return {
+        statusCode: 500,
+        success: false,
+        message: "Error creating payroll preview",
+        data: null,
+      };
+    }
+  }
+
   async createPayRoll(
     file: Express.Multer.File,
     auth: string

@@ -10,7 +10,7 @@ const limpacpf = (cpf: string):string => {
 }
 
 export const mapperPayRoll = (data: any): PayRollDTO => {
-  console.log("Nascimento:", data.dataNascimento)
+  // console.log("Nascimento:", data.dataNascimento)
   return {
     // id: data.Id,
     ParceriaId: 43,//data.ParceriaId,

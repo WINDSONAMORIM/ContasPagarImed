@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { validateuploadFolderExists } from "../../middlewares/validateuploadFolderExists.middleware";
+import { uploadInDisck } from "../../middlewares/validateuploadFolderExists.middleware";
 import { FilesTempController } from "./controllers";
 
 export const filesTempRouter = (router: Router) => {
@@ -7,7 +7,7 @@ export const filesTempRouter = (router: Router) => {
 
   router.post(
     "/filesTemp",
-    validateuploadFolderExists.array("files"),
-    filesTempController.toLoad.bind(filesTempController)
+    uploadInDisck.array("files"),
+    filesTempController.toLoad.bind(filesTempController),
   );
 };

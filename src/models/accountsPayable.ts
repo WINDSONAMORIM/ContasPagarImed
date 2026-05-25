@@ -18,7 +18,9 @@ export class AccountsPayable {
   private valorTotal: number;
   private parcelaPaga: number;
   private totalParcelas: number;
-  private arquivoTemp: FilesTemp;
+  private arquivoNF: string;
+  private arquivoNFHash: string;
+  private arquivoNFExtensao: string;
   private tributoRetido: boolean;
   private issRetido: number;
   private inssRetido: number;
@@ -45,7 +47,9 @@ export class AccountsPayable {
     this.valorTotal = dto.ValorTotal;
     this.parcelaPaga = dto.ParcelaPaga;
     this.totalParcelas = dto.TotalParcelas;
-    this.arquivoTemp = new FilesTemp(dto.ArquivoTemp);
+    this.arquivoNF = dto.ArquivoNF;
+    this.arquivoNFHash = dto.ArquivoNFHash;
+    this.arquivoNFExtensao = dto.ArquivoNFExtensao;
     this.tributoRetido = dto.TributoRetido;
     this.issRetido = dto.IssRetido;
     this.inssRetido = dto.InssRetido;
@@ -87,7 +91,9 @@ export class AccountsPayable {
       ValorTotal: this.valorTotal,
       ParcelaPaga: this.parcelaPaga,
       TotalParcelas: this.totalParcelas,
-      ArquivoTemp: this.arquivoTemp.getProps(),
+      ArquivoNF: this.arquivoNF,
+      ArquivoNFHash: this.arquivoNFHash,
+      ArquivoNFExtensao: this.arquivoNFExtensao,
       TributoRetido: this.tributoRetido,
       IssRetido: this.issRetido,
       InssRetido: this.inssRetido,

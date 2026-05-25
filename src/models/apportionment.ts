@@ -1,4 +1,3 @@
-import { itensNota } from "../data/produtosData";
 import { ApportionmentDTO } from "../entities/apportionment";
 interface Itens{
   prod : string;

@@ -4,6 +4,17 @@ import { uploadInMemory } from "../../middlewares/validateuploadFolderExists.mid
 
 export const payRollRoutes = (router: Router) => {
   const payRollController = new PayRollController();
+  
+  router.post(
+    "/folhaPagamentoPreview",
+    uploadInMemory.single("files"),
+    // validateuploadFolderExists.array("files"),
+    payRollController.createPreviewPayRollController.bind(
+      payRollController,
+    ),
+  );
+  
+  
   router.post(
     "/FolhaPagamento",uploadInMemory.single("files"),
     payRollController.createPayRollController.bind(payRollController)
